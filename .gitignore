@@ -1,7 +1,54 @@
+# Dependencies
 node_modules
+
+# Build output
 dist
-.DS_Store
 server/public
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+
+# Replit internals
+.cache
+.upm
+.config
+.agents
+.local
+.canvas
 vite.config.ts.*
-*.tar.gzattached_assets/
+
+# Mockup sandbox & canvas artifacts
+artifacts/
+components/
+
+# Agent session assets (screenshots, uploads, etc.)
+attached_assets/
+
+# Legacy / one-time dev files
+artwork-windows.json
+window_mapping.json
+overlay_a4_p_black_std_m0.webp
+upload-logo.js
+design_guidelines.md
+assets/
+
+# SQL scripts (already applied to production DB)
+production_migration.sql
+production_addons.sql
+production_addon_sync.sql
+sync_shopify_variant_ids.sql
+variants_clean.sql
+variants_only.sql
+
+# Test fixtures
+tests/
+
+# Large binary assets
 public/Artist_Collection_Photos.zip
+*.tar.gz
+*.zip
+*.psd
