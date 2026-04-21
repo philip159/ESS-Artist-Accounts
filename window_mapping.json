@@ -1,0 +1,3026 @@
+{
+  "6x8_p": {
+    "sizeKey": "6x8",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 152,
+      "h": 203
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 281,
+        "y": 374,
+        "w": 938,
+        "h": 1253
+      },
+      "artwork": {
+        "x": 281,
+        "y": 374,
+        "w": 938,
+        "h": 1253
+      },
+      "frame": {
+        "x": 151,
+        "y": 244,
+        "w": 1198,
+        "h": 1513
+      },
+      "frameWidthPx": 130,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 466,
+        "y": 559,
+        "w": 568,
+        "h": 883
+      },
+      "artwork": {
+        "x": 281,
+        "y": 374,
+        "w": 938,
+        "h": 1253
+      },
+      "frame": {
+        "x": 151,
+        "y": 244,
+        "w": 1198,
+        "h": 1513
+      },
+      "frameWidthPx": 130,
+      "mountBorderPx": 185
+    },
+    "unframed": {
+      "window": {
+        "x": 175,
+        "y": 231,
+        "w": 1151,
+        "h": 1538
+      },
+      "artwork": {
+        "x": 175,
+        "y": 231,
+        "w": 1151,
+        "h": 1538
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "6x8_l": {
+    "sizeKey": "6x8",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 203,
+      "h": 152
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 239,
+        "y": 617,
+        "w": 1023,
+        "h": 766
+      },
+      "artwork": {
+        "x": 239,
+        "y": 617,
+        "w": 1023,
+        "h": 766
+      },
+      "frame": {
+        "x": 133,
+        "y": 511,
+        "w": 1235,
+        "h": 978
+      },
+      "frameWidthPx": 106,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 390,
+        "y": 768,
+        "w": 721,
+        "h": 464
+      },
+      "artwork": {
+        "x": 239,
+        "y": 617,
+        "w": 1023,
+        "h": 766
+      },
+      "frame": {
+        "x": 133,
+        "y": 511,
+        "w": 1235,
+        "h": 978
+      },
+      "frameWidthPx": 106,
+      "mountBorderPx": 151
+    },
+    "unframed": {
+      "window": {
+        "x": 148,
+        "y": 549,
+        "w": 1205,
+        "h": 902
+      },
+      "artwork": {
+        "x": 148,
+        "y": 549,
+        "w": 1205,
+        "h": 902
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "8x10_p": {
+    "sizeKey": "8x10",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 203,
+      "h": 254
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 241,
+        "y": 363,
+        "w": 1018,
+        "h": 1274
+      },
+      "artwork": {
+        "x": 241,
+        "y": 363,
+        "w": 1018,
+        "h": 1274
+      },
+      "frame": {
+        "x": 136,
+        "y": 258,
+        "w": 1228,
+        "h": 1484
+      },
+      "frameWidthPx": 105,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 442,
+        "y": 564,
+        "w": 616,
+        "h": 872
+      },
+      "artwork": {
+        "x": 241,
+        "y": 363,
+        "w": 1018,
+        "h": 1274
+      },
+      "frame": {
+        "x": 136,
+        "y": 258,
+        "w": 1228,
+        "h": 1484
+      },
+      "frameWidthPx": 105,
+      "mountBorderPx": 201
+    },
+    "unframed": {
+      "window": {
+        "x": 151,
+        "y": 251,
+        "w": 1198,
+        "h": 1499
+      },
+      "artwork": {
+        "x": 151,
+        "y": 251,
+        "w": 1198,
+        "h": 1499
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "8x10_l": {
+    "sizeKey": "8x10",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 254,
+      "h": 203
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 212,
+        "y": 570,
+        "w": 1077,
+        "h": 861
+      },
+      "artwork": {
+        "x": 212,
+        "y": 570,
+        "w": 1077,
+        "h": 861
+      },
+      "frame": {
+        "x": 123,
+        "y": 481,
+        "w": 1255,
+        "h": 1039
+      },
+      "frameWidthPx": 89,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 382,
+        "y": 740,
+        "w": 737,
+        "h": 521
+      },
+      "artwork": {
+        "x": 212,
+        "y": 570,
+        "w": 1077,
+        "h": 861
+      },
+      "frame": {
+        "x": 123,
+        "y": 481,
+        "w": 1255,
+        "h": 1039
+      },
+      "frameWidthPx": 89,
+      "mountBorderPx": 170
+    },
+    "unframed": {
+      "window": {
+        "x": 133,
+        "y": 507,
+        "w": 1234,
+        "h": 986
+      },
+      "artwork": {
+        "x": 133,
+        "y": 507,
+        "w": 1234,
+        "h": 986
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a4_p": {
+    "sizeKey": "a4",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 210,
+      "h": 297
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 238,
+        "y": 276,
+        "w": 1025,
+        "h": 1449
+      },
+      "artwork": {
+        "x": 238,
+        "y": 276,
+        "w": 1025,
+        "h": 1449
+      },
+      "frame": {
+        "x": 136,
+        "y": 174,
+        "w": 1229,
+        "h": 1653
+      },
+      "frameWidthPx": 102,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 433,
+        "y": 471,
+        "w": 635,
+        "h": 1059
+      },
+      "artwork": {
+        "x": 238,
+        "y": 276,
+        "w": 1025,
+        "h": 1449
+      },
+      "frame": {
+        "x": 136,
+        "y": 174,
+        "w": 1229,
+        "h": 1653
+      },
+      "frameWidthPx": 102,
+      "mountBorderPx": 195
+    },
+    "unframed": {
+      "window": {
+        "x": 150,
+        "y": 151,
+        "w": 1200,
+        "h": 1698
+      },
+      "artwork": {
+        "x": 150,
+        "y": 151,
+        "w": 1200,
+        "h": 1698
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a4_l": {
+    "sizeKey": "a4",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 297,
+      "h": 210
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 194,
+        "y": 607,
+        "w": 1112,
+        "h": 786
+      },
+      "artwork": {
+        "x": 194,
+        "y": 607,
+        "w": 1112,
+        "h": 786
+      },
+      "frame": {
+        "x": 115,
+        "y": 528,
+        "w": 1270,
+        "h": 944
+      },
+      "frameWidthPx": 79,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 344,
+        "y": 757,
+        "w": 812,
+        "h": 486
+      },
+      "artwork": {
+        "x": 194,
+        "y": 607,
+        "w": 1112,
+        "h": 786
+      },
+      "frame": {
+        "x": 115,
+        "y": 528,
+        "w": 1270,
+        "h": 944
+      },
+      "frameWidthPx": 79,
+      "mountBorderPx": 150
+    },
+    "unframed": {
+      "window": {
+        "x": 124,
+        "y": 557,
+        "w": 1253,
+        "h": 886
+      },
+      "artwork": {
+        "x": 124,
+        "y": 557,
+        "w": 1253,
+        "h": 886
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "8x12_p": {
+    "sizeKey": "8x12",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 203,
+      "h": 305
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 245,
+        "y": 242,
+        "w": 1010,
+        "h": 1517
+      },
+      "artwork": {
+        "x": 245,
+        "y": 242,
+        "w": 1010,
+        "h": 1517
+      },
+      "frame": {
+        "x": 141,
+        "y": 138,
+        "w": 1218,
+        "h": 1725
+      },
+      "frameWidthPx": 104,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 444,
+        "y": 441,
+        "w": 612,
+        "h": 1119
+      },
+      "artwork": {
+        "x": 245,
+        "y": 242,
+        "w": 1010,
+        "h": 1517
+      },
+      "frame": {
+        "x": 141,
+        "y": 138,
+        "w": 1218,
+        "h": 1725
+      },
+      "frameWidthPx": 104,
+      "mountBorderPx": 199
+    },
+    "unframed": {
+      "window": {
+        "x": 183,
+        "y": 148,
+        "w": 1135,
+        "h": 1705
+      },
+      "artwork": {
+        "x": 183,
+        "y": 148,
+        "w": 1135,
+        "h": 1705
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "8x12_l": {
+    "sizeKey": "8x12",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 305,
+      "h": 203
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 191,
+        "y": 628,
+        "w": 1118,
+        "h": 744
+      },
+      "artwork": {
+        "x": 191,
+        "y": 628,
+        "w": 1118,
+        "h": 744
+      },
+      "frame": {
+        "x": 114,
+        "y": 551,
+        "w": 1272,
+        "h": 898
+      },
+      "frameWidthPx": 77,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 338,
+        "y": 775,
+        "w": 824,
+        "h": 450
+      },
+      "artwork": {
+        "x": 191,
+        "y": 628,
+        "w": 1118,
+        "h": 744
+      },
+      "frame": {
+        "x": 114,
+        "y": 551,
+        "w": 1272,
+        "h": 898
+      },
+      "frameWidthPx": 77,
+      "mountBorderPx": 147
+    },
+    "unframed": {
+      "window": {
+        "x": 122,
+        "y": 582,
+        "w": 1256,
+        "h": 836
+      },
+      "artwork": {
+        "x": 122,
+        "y": 582,
+        "w": 1256,
+        "h": 836
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "11x14_p": {
+    "sizeKey": "11x14",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 279,
+      "h": 356
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 204,
+        "y": 303,
+        "w": 1092,
+        "h": 1394
+      },
+      "artwork": {
+        "x": 204,
+        "y": 303,
+        "w": 1092,
+        "h": 1394
+      },
+      "frame": {
+        "x": 122,
+        "y": 221,
+        "w": 1256,
+        "h": 1558
+      },
+      "frameWidthPx": 82,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 361,
+        "y": 460,
+        "w": 778,
+        "h": 1080
+      },
+      "artwork": {
+        "x": 204,
+        "y": 303,
+        "w": 1092,
+        "h": 1394
+      },
+      "frame": {
+        "x": 122,
+        "y": 221,
+        "w": 1256,
+        "h": 1558
+      },
+      "frameWidthPx": 82,
+      "mountBorderPx": 157
+    },
+    "unframed": {
+      "window": {
+        "x": 131,
+        "y": 211,
+        "w": 1238,
+        "h": 1579
+      },
+      "artwork": {
+        "x": 131,
+        "y": 211,
+        "w": 1238,
+        "h": 1579
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "11x14_l": {
+    "sizeKey": "11x14",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 356,
+      "h": 279
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 177,
+        "y": 551,
+        "w": 1147,
+        "h": 899
+      },
+      "artwork": {
+        "x": 177,
+        "y": 551,
+        "w": 1147,
+        "h": 899
+      },
+      "frame": {
+        "x": 109,
+        "y": 483,
+        "w": 1283,
+        "h": 1035
+      },
+      "frameWidthPx": 68,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 306,
+        "y": 680,
+        "w": 889,
+        "h": 641
+      },
+      "artwork": {
+        "x": 177,
+        "y": 551,
+        "w": 1147,
+        "h": 899
+      },
+      "frame": {
+        "x": 109,
+        "y": 483,
+        "w": 1283,
+        "h": 1035
+      },
+      "frameWidthPx": 68,
+      "mountBorderPx": 129
+    },
+    "unframed": {
+      "window": {
+        "x": 116,
+        "y": 503,
+        "w": 1269,
+        "h": 995
+      },
+      "artwork": {
+        "x": 116,
+        "y": 503,
+        "w": 1269,
+        "h": 995
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a3_p": {
+    "sizeKey": "a3",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 297,
+      "h": 420
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 199,
+        "y": 220,
+        "w": 1103,
+        "h": 1560
+      },
+      "artwork": {
+        "x": 199,
+        "y": 220,
+        "w": 1103,
+        "h": 1560
+      },
+      "frame": {
+        "x": 121,
+        "y": 142,
+        "w": 1259,
+        "h": 1716
+      },
+      "frameWidthPx": 78,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 385,
+        "y": 406,
+        "w": 731,
+        "h": 1188
+      },
+      "artwork": {
+        "x": 199,
+        "y": 220,
+        "w": 1103,
+        "h": 1560
+      },
+      "frame": {
+        "x": 121,
+        "y": 142,
+        "w": 1259,
+        "h": 1716
+      },
+      "frameWidthPx": 78,
+      "mountBorderPx": 186
+    },
+    "unframed": {
+      "window": {
+        "x": 134,
+        "y": 129,
+        "w": 1233,
+        "h": 1743
+      },
+      "artwork": {
+        "x": 134,
+        "y": 129,
+        "w": 1233,
+        "h": 1743
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a3_l": {
+    "sizeKey": "a3",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 420,
+      "h": 297
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 162,
+        "y": 584,
+        "w": 1176,
+        "h": 832
+      },
+      "artwork": {
+        "x": 162,
+        "y": 584,
+        "w": 1176,
+        "h": 832
+      },
+      "frame": {
+        "x": 103,
+        "y": 525,
+        "w": 1294,
+        "h": 950
+      },
+      "frameWidthPx": 59,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 302,
+        "y": 724,
+        "w": 896,
+        "h": 552
+      },
+      "artwork": {
+        "x": 162,
+        "y": 584,
+        "w": 1176,
+        "h": 832
+      },
+      "frame": {
+        "x": 103,
+        "y": 525,
+        "w": 1294,
+        "h": 950
+      },
+      "frameWidthPx": 59,
+      "mountBorderPx": 140
+    },
+    "unframed": {
+      "window": {
+        "x": 108,
+        "y": 546,
+        "w": 1284,
+        "h": 908
+      },
+      "artwork": {
+        "x": 108,
+        "y": 546,
+        "w": 1284,
+        "h": 908
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "12x16_p": {
+    "sizeKey": "12x16",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 305,
+      "h": 406
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 195,
+        "y": 261,
+        "w": 1110,
+        "h": 1478
+      },
+      "artwork": {
+        "x": 195,
+        "y": 261,
+        "w": 1110,
+        "h": 1478
+      },
+      "frame": {
+        "x": 119,
+        "y": 185,
+        "w": 1262,
+        "h": 1630
+      },
+      "frameWidthPx": 76,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 377,
+        "y": 443,
+        "w": 746,
+        "h": 1114
+      },
+      "artwork": {
+        "x": 195,
+        "y": 261,
+        "w": 1110,
+        "h": 1478
+      },
+      "frame": {
+        "x": 119,
+        "y": 185,
+        "w": 1262,
+        "h": 1630
+      },
+      "frameWidthPx": 76,
+      "mountBorderPx": 182
+    },
+    "unframed": {
+      "window": {
+        "x": 127,
+        "y": 171,
+        "w": 1246,
+        "h": 1659
+      },
+      "artwork": {
+        "x": 127,
+        "y": 171,
+        "w": 1246,
+        "h": 1659
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "12x16_l": {
+    "sizeKey": "12x16",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 406,
+      "h": 305
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 165,
+        "y": 561,
+        "w": 1170,
+        "h": 879
+      },
+      "artwork": {
+        "x": 165,
+        "y": 561,
+        "w": 1170,
+        "h": 879
+      },
+      "frame": {
+        "x": 104,
+        "y": 500,
+        "w": 1292,
+        "h": 1001
+      },
+      "frameWidthPx": 61,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 309,
+        "y": 705,
+        "w": 882,
+        "h": 591
+      },
+      "artwork": {
+        "x": 165,
+        "y": 561,
+        "w": 1170,
+        "h": 879
+      },
+      "frame": {
+        "x": 104,
+        "y": 500,
+        "w": 1292,
+        "h": 1001
+      },
+      "frameWidthPx": 61,
+      "mountBorderPx": 144
+    },
+    "unframed": {
+      "window": {
+        "x": 110,
+        "y": 519,
+        "w": 1281,
+        "h": 962
+      },
+      "artwork": {
+        "x": 110,
+        "y": 519,
+        "w": 1281,
+        "h": 962
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "12x18_p": {
+    "sizeKey": "12x18",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 305,
+      "h": 457
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 211,
+        "y": 193,
+        "w": 1078,
+        "h": 1615
+      },
+      "artwork": {
+        "x": 211,
+        "y": 193,
+        "w": 1078,
+        "h": 1615
+      },
+      "frame": {
+        "x": 137,
+        "y": 119,
+        "w": 1226,
+        "h": 1763
+      },
+      "frameWidthPx": 74,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 388,
+        "y": 370,
+        "w": 724,
+        "h": 1261
+      },
+      "artwork": {
+        "x": 211,
+        "y": 193,
+        "w": 1078,
+        "h": 1615
+      },
+      "frame": {
+        "x": 137,
+        "y": 119,
+        "w": 1226,
+        "h": 1763
+      },
+      "frameWidthPx": 74,
+      "mountBorderPx": 177
+    },
+    "unframed": {
+      "window": {
+        "x": 165,
+        "y": 124,
+        "w": 1170,
+        "h": 1752
+      },
+      "artwork": {
+        "x": 165,
+        "y": 124,
+        "w": 1170,
+        "h": 1752
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "12x18_l": {
+    "sizeKey": "12x18",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 457,
+      "h": 305
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 155,
+        "y": 603,
+        "w": 1190,
+        "h": 794
+      },
+      "artwork": {
+        "x": 155,
+        "y": 603,
+        "w": 1190,
+        "h": 794
+      },
+      "frame": {
+        "x": 100,
+        "y": 548,
+        "w": 1300,
+        "h": 904
+      },
+      "frameWidthPx": 55,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 285,
+        "y": 733,
+        "w": 930,
+        "h": 534
+      },
+      "artwork": {
+        "x": 155,
+        "y": 603,
+        "w": 1190,
+        "h": 794
+      },
+      "frame": {
+        "x": 100,
+        "y": 548,
+        "w": 1300,
+        "h": 904
+      },
+      "frameWidthPx": 55,
+      "mountBorderPx": 130
+    },
+    "unframed": {
+      "window": {
+        "x": 105,
+        "y": 569,
+        "w": 1291,
+        "h": 862
+      },
+      "artwork": {
+        "x": 105,
+        "y": 569,
+        "w": 1291,
+        "h": 862
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "16x20_p": {
+    "sizeKey": "16x20",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 406,
+      "h": 508
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 168,
+        "y": 272,
+        "w": 1164,
+        "h": 1456
+      },
+      "artwork": {
+        "x": 168,
+        "y": 272,
+        "w": 1164,
+        "h": 1456
+      },
+      "frame": {
+        "x": 108,
+        "y": 212,
+        "w": 1284,
+        "h": 1576
+      },
+      "frameWidthPx": 60,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 311,
+        "y": 415,
+        "w": 878,
+        "h": 1170
+      },
+      "artwork": {
+        "x": 168,
+        "y": 272,
+        "w": 1164,
+        "h": 1456
+      },
+      "frame": {
+        "x": 108,
+        "y": 212,
+        "w": 1284,
+        "h": 1576
+      },
+      "frameWidthPx": 60,
+      "mountBorderPx": 143
+    },
+    "unframed": {
+      "window": {
+        "x": 114,
+        "y": 204,
+        "w": 1273,
+        "h": 1593
+      },
+      "artwork": {
+        "x": 114,
+        "y": 204,
+        "w": 1273,
+        "h": 1593
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "16x20_l": {
+    "sizeKey": "16x20",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 508,
+      "h": 406
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 148,
+        "y": 519,
+        "w": 1205,
+        "h": 963
+      },
+      "artwork": {
+        "x": 148,
+        "y": 519,
+        "w": 1205,
+        "h": 963
+      },
+      "frame": {
+        "x": 98,
+        "y": 469,
+        "w": 1305,
+        "h": 1063
+      },
+      "frameWidthPx": 50,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 267,
+        "y": 638,
+        "w": 967,
+        "h": 725
+      },
+      "artwork": {
+        "x": 148,
+        "y": 519,
+        "w": 1205,
+        "h": 963
+      },
+      "frame": {
+        "x": 98,
+        "y": 469,
+        "w": 1305,
+        "h": 1063
+      },
+      "frameWidthPx": 50,
+      "mountBorderPx": 119
+    },
+    "unframed": {
+      "window": {
+        "x": 102,
+        "y": 482,
+        "w": 1297,
+        "h": 1036
+      },
+      "artwork": {
+        "x": 102,
+        "y": 482,
+        "w": 1297,
+        "h": 1036
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a2_p": {
+    "sizeKey": "a2",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 420,
+      "h": 594
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 167,
+        "y": 175,
+        "w": 1167,
+        "h": 1650
+      },
+      "artwork": {
+        "x": 167,
+        "y": 175,
+        "w": 1167,
+        "h": 1650
+      },
+      "frame": {
+        "x": 109,
+        "y": 117,
+        "w": 1283,
+        "h": 1766
+      },
+      "frameWidthPx": 58,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 306,
+        "y": 314,
+        "w": 889,
+        "h": 1372
+      },
+      "artwork": {
+        "x": 167,
+        "y": 175,
+        "w": 1167,
+        "h": 1650
+      },
+      "frame": {
+        "x": 109,
+        "y": 117,
+        "w": 1283,
+        "h": 1766
+      },
+      "frameWidthPx": 58,
+      "mountBorderPx": 139
+    },
+    "unframed": {
+      "window": {
+        "x": 123,
+        "y": 113,
+        "w": 1255,
+        "h": 1775
+      },
+      "artwork": {
+        "x": 123,
+        "y": 113,
+        "w": 1255,
+        "h": 1775
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a2_l": {
+    "sizeKey": "a2",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 594,
+      "h": 420
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 137,
+        "y": 567,
+        "w": 1227,
+        "h": 867
+      },
+      "artwork": {
+        "x": 137,
+        "y": 567,
+        "w": 1227,
+        "h": 867
+      },
+      "frame": {
+        "x": 94,
+        "y": 524,
+        "w": 1313,
+        "h": 953
+      },
+      "frameWidthPx": 43,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 240,
+        "y": 670,
+        "w": 1021,
+        "h": 661
+      },
+      "artwork": {
+        "x": 137,
+        "y": 567,
+        "w": 1227,
+        "h": 867
+      },
+      "frame": {
+        "x": 94,
+        "y": 524,
+        "w": 1313,
+        "h": 953
+      },
+      "frameWidthPx": 43,
+      "mountBorderPx": 103
+    },
+    "unframed": {
+      "window": {
+        "x": 96,
+        "y": 538,
+        "w": 1308,
+        "h": 925
+      },
+      "artwork": {
+        "x": 96,
+        "y": 538,
+        "w": 1308,
+        "h": 925
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "18x24_p": {
+    "sizeKey": "18x24",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 457,
+      "h": 610
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 160,
+        "y": 212,
+        "w": 1181,
+        "h": 1577
+      },
+      "artwork": {
+        "x": 160,
+        "y": 212,
+        "w": 1181,
+        "h": 1577
+      },
+      "frame": {
+        "x": 106,
+        "y": 158,
+        "w": 1289,
+        "h": 1685
+      },
+      "frameWidthPx": 54,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 289,
+        "y": 341,
+        "w": 923,
+        "h": 1319
+      },
+      "artwork": {
+        "x": 160,
+        "y": 212,
+        "w": 1181,
+        "h": 1577
+      },
+      "frame": {
+        "x": 106,
+        "y": 158,
+        "w": 1289,
+        "h": 1685
+      },
+      "frameWidthPx": 54,
+      "mountBorderPx": 129
+    },
+    "unframed": {
+      "window": {
+        "x": 110,
+        "y": 146,
+        "w": 1281,
+        "h": 1709
+      },
+      "artwork": {
+        "x": 110,
+        "y": 146,
+        "w": 1281,
+        "h": 1709
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "18x24_l": {
+    "sizeKey": "18x24",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 610,
+      "h": 457
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 135,
+        "y": 540,
+        "w": 1230,
+        "h": 921
+      },
+      "artwork": {
+        "x": 135,
+        "y": 540,
+        "w": 1230,
+        "h": 921
+      },
+      "frame": {
+        "x": 93,
+        "y": 498,
+        "w": 1314,
+        "h": 1005
+      },
+      "frameWidthPx": 42,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 236,
+        "y": 641,
+        "w": 1028,
+        "h": 719
+      },
+      "artwork": {
+        "x": 135,
+        "y": 540,
+        "w": 1230,
+        "h": 921
+      },
+      "frame": {
+        "x": 93,
+        "y": 498,
+        "w": 1314,
+        "h": 1005
+      },
+      "frameWidthPx": 42,
+      "mountBorderPx": 101
+    },
+    "unframed": {
+      "window": {
+        "x": 96,
+        "y": 510,
+        "w": 1309,
+        "h": 980
+      },
+      "artwork": {
+        "x": 96,
+        "y": 510,
+        "w": 1309,
+        "h": 980
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "20x28_p": {
+    "sizeKey": "20x28",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 508,
+      "h": 711
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 152,
+        "y": 163,
+        "w": 1196,
+        "h": 1674
+      },
+      "artwork": {
+        "x": 152,
+        "y": 163,
+        "w": 1196,
+        "h": 1674
+      },
+      "frame": {
+        "x": 103,
+        "y": 114,
+        "w": 1294,
+        "h": 1772
+      },
+      "frameWidthPx": 49,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 270,
+        "y": 281,
+        "w": 960,
+        "h": 1438
+      },
+      "artwork": {
+        "x": 152,
+        "y": 163,
+        "w": 1196,
+        "h": 1674
+      },
+      "frame": {
+        "x": 103,
+        "y": 114,
+        "w": 1294,
+        "h": 1772
+      },
+      "frameWidthPx": 49,
+      "mountBorderPx": 118
+    },
+    "unframed": {
+      "window": {
+        "x": 112,
+        "y": 106,
+        "w": 1277,
+        "h": 1788
+      },
+      "artwork": {
+        "x": 112,
+        "y": 106,
+        "w": 1277,
+        "h": 1788
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "20x28_l": {
+    "sizeKey": "20x28",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 711,
+      "h": 508
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 126,
+        "y": 554,
+        "w": 1248,
+        "h": 892
+      },
+      "artwork": {
+        "x": 126,
+        "y": 554,
+        "w": 1248,
+        "h": 892
+      },
+      "frame": {
+        "x": 89,
+        "y": 517,
+        "w": 1322,
+        "h": 966
+      },
+      "frameWidthPx": 37,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 214,
+        "y": 642,
+        "w": 1072,
+        "h": 716
+      },
+      "artwork": {
+        "x": 126,
+        "y": 554,
+        "w": 1248,
+        "h": 892
+      },
+      "frame": {
+        "x": 89,
+        "y": 517,
+        "w": 1322,
+        "h": 966
+      },
+      "frameWidthPx": 37,
+      "mountBorderPx": 88
+    },
+    "unframed": {
+      "window": {
+        "x": 92,
+        "y": 530,
+        "w": 1317,
+        "h": 941
+      },
+      "artwork": {
+        "x": 92,
+        "y": 530,
+        "w": 1317,
+        "h": 941
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "20x30_p": {
+    "sizeKey": "20x30",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 508,
+      "h": 762
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 182,
+        "y": 148,
+        "w": 1136,
+        "h": 1704
+      },
+      "artwork": {
+        "x": 182,
+        "y": 148,
+        "w": 1136,
+        "h": 1704
+      },
+      "frame": {
+        "x": 135,
+        "y": 101,
+        "w": 1230,
+        "h": 1798
+      },
+      "frameWidthPx": 47,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 294,
+        "y": 260,
+        "w": 912,
+        "h": 1480
+      },
+      "artwork": {
+        "x": 182,
+        "y": 148,
+        "w": 1136,
+        "h": 1704
+      },
+      "frame": {
+        "x": 135,
+        "y": 101,
+        "w": 1230,
+        "h": 1798
+      },
+      "frameWidthPx": 47,
+      "mountBorderPx": 112
+    },
+    "unframed": {
+      "window": {
+        "x": 153,
+        "y": 104,
+        "w": 1195,
+        "h": 1793
+      },
+      "artwork": {
+        "x": 153,
+        "y": 104,
+        "w": 1195,
+        "h": 1793
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "20x30_l": {
+    "sizeKey": "20x30",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 762,
+      "h": 508
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 122,
+        "y": 582,
+        "w": 1256,
+        "h": 837
+      },
+      "artwork": {
+        "x": 122,
+        "y": 582,
+        "w": 1256,
+        "h": 837
+      },
+      "frame": {
+        "x": 87,
+        "y": 547,
+        "w": 1326,
+        "h": 907
+      },
+      "frameWidthPx": 35,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 204,
+        "y": 664,
+        "w": 1092,
+        "h": 673
+      },
+      "artwork": {
+        "x": 122,
+        "y": 582,
+        "w": 1256,
+        "h": 837
+      },
+      "frame": {
+        "x": 87,
+        "y": 547,
+        "w": 1326,
+        "h": 907
+      },
+      "frameWidthPx": 35,
+      "mountBorderPx": 82
+    },
+    "unframed": {
+      "window": {
+        "x": 90,
+        "y": 560,
+        "w": 1321,
+        "h": 881
+      },
+      "artwork": {
+        "x": 90,
+        "y": 560,
+        "w": 1321,
+        "h": 881
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a1_p": {
+    "sizeKey": "a1",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 594,
+      "h": 841
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 144,
+        "y": 142,
+        "w": 1213,
+        "h": 1717
+      },
+      "artwork": {
+        "x": 144,
+        "y": 142,
+        "w": 1213,
+        "h": 1717
+      },
+      "frame": {
+        "x": 101,
+        "y": 99,
+        "w": 1299,
+        "h": 1803
+      },
+      "frameWidthPx": 43,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 246,
+        "y": 244,
+        "w": 1009,
+        "h": 1513
+      },
+      "artwork": {
+        "x": 144,
+        "y": 142,
+        "w": 1213,
+        "h": 1717
+      },
+      "frame": {
+        "x": 101,
+        "y": 99,
+        "w": 1299,
+        "h": 1803
+      },
+      "frameWidthPx": 43,
+      "mountBorderPx": 102
+    },
+    "unframed": {
+      "window": {
+        "x": 115,
+        "y": 101,
+        "w": 1270,
+        "h": 1798
+      },
+      "artwork": {
+        "x": 115,
+        "y": 101,
+        "w": 1270,
+        "h": 1798
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a1_l": {
+    "sizeKey": "a1",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 841,
+      "h": 594
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 118,
+        "y": 553,
+        "w": 1265,
+        "h": 894
+      },
+      "artwork": {
+        "x": 118,
+        "y": 553,
+        "w": 1265,
+        "h": 894
+      },
+      "frame": {
+        "x": 86,
+        "y": 521,
+        "w": 1329,
+        "h": 958
+      },
+      "frameWidthPx": 32,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 193,
+        "y": 628,
+        "w": 1115,
+        "h": 744
+      },
+      "artwork": {
+        "x": 118,
+        "y": 553,
+        "w": 1265,
+        "h": 894
+      },
+      "frame": {
+        "x": 86,
+        "y": 521,
+        "w": 1329,
+        "h": 958
+      },
+      "frameWidthPx": 32,
+      "mountBorderPx": 75
+    },
+    "unframed": {
+      "window": {
+        "x": 88,
+        "y": 532,
+        "w": 1325,
+        "h": 936
+      },
+      "artwork": {
+        "x": 88,
+        "y": 532,
+        "w": 1325,
+        "h": 936
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "24x32_p": {
+    "sizeKey": "24x32",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 610,
+      "h": 813
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 140,
+        "y": 187,
+        "w": 1221,
+        "h": 1627
+      },
+      "artwork": {
+        "x": 140,
+        "y": 187,
+        "w": 1221,
+        "h": 1627
+      },
+      "frame": {
+        "x": 98,
+        "y": 145,
+        "w": 1305,
+        "h": 1711
+      },
+      "frameWidthPx": 42,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 240,
+        "y": 287,
+        "w": 1021,
+        "h": 1427
+      },
+      "artwork": {
+        "x": 140,
+        "y": 187,
+        "w": 1221,
+        "h": 1627
+      },
+      "frame": {
+        "x": 98,
+        "y": 145,
+        "w": 1305,
+        "h": 1711
+      },
+      "frameWidthPx": 42,
+      "mountBorderPx": 100
+    },
+    "unframed": {
+      "window": {
+        "x": 101,
+        "y": 135,
+        "w": 1299,
+        "h": 1731
+      },
+      "artwork": {
+        "x": 101,
+        "y": 135,
+        "w": 1299,
+        "h": 1731
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "24x32_l": {
+    "sizeKey": "24x32",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 813,
+      "h": 610
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 120,
+        "y": 527,
+        "w": 1261,
+        "h": 946
+      },
+      "artwork": {
+        "x": 120,
+        "y": 527,
+        "w": 1261,
+        "h": 946
+      },
+      "frame": {
+        "x": 87,
+        "y": 494,
+        "w": 1327,
+        "h": 1012
+      },
+      "frameWidthPx": 33,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 198,
+        "y": 605,
+        "w": 1105,
+        "h": 790
+      },
+      "artwork": {
+        "x": 120,
+        "y": 527,
+        "w": 1261,
+        "h": 946
+      },
+      "frame": {
+        "x": 87,
+        "y": 494,
+        "w": 1327,
+        "h": 1012
+      },
+      "frameWidthPx": 33,
+      "mountBorderPx": 78
+    },
+    "unframed": {
+      "window": {
+        "x": 89,
+        "y": 504,
+        "w": 1323,
+        "h": 993
+      },
+      "artwork": {
+        "x": 89,
+        "y": 504,
+        "w": 1323,
+        "h": 993
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "24x36_p": {
+    "sizeKey": "24x36",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 610,
+      "h": 914
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 174,
+        "y": 136,
+        "w": 1153,
+        "h": 1728
+      },
+      "artwork": {
+        "x": 174,
+        "y": 136,
+        "w": 1153,
+        "h": 1728
+      },
+      "frame": {
+        "x": 134,
+        "y": 96,
+        "w": 1233,
+        "h": 1808
+      },
+      "frameWidthPx": 40,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 269,
+        "y": 231,
+        "w": 963,
+        "h": 1538
+      },
+      "artwork": {
+        "x": 174,
+        "y": 136,
+        "w": 1153,
+        "h": 1728
+      },
+      "frame": {
+        "x": 134,
+        "y": 96,
+        "w": 1233,
+        "h": 1808
+      },
+      "frameWidthPx": 40,
+      "mountBorderPx": 95
+    },
+    "unframed": {
+      "window": {
+        "x": 148,
+        "y": 99,
+        "w": 1204,
+        "h": 1803
+      },
+      "artwork": {
+        "x": 148,
+        "y": 99,
+        "w": 1204,
+        "h": 1803
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "24x36_l": {
+    "sizeKey": "24x36",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 914,
+      "h": 610
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 114,
+        "y": 575,
+        "w": 1273,
+        "h": 850
+      },
+      "artwork": {
+        "x": 114,
+        "y": 575,
+        "w": 1273,
+        "h": 850
+      },
+      "frame": {
+        "x": 85,
+        "y": 546,
+        "w": 1331,
+        "h": 908
+      },
+      "frameWidthPx": 29,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 184,
+        "y": 645,
+        "w": 1133,
+        "h": 710
+      },
+      "artwork": {
+        "x": 114,
+        "y": 575,
+        "w": 1273,
+        "h": 850
+      },
+      "frame": {
+        "x": 85,
+        "y": 546,
+        "w": 1331,
+        "h": 908
+      },
+      "frameWidthPx": 29,
+      "mountBorderPx": 70
+    },
+    "unframed": {
+      "window": {
+        "x": 86,
+        "y": 557,
+        "w": 1329,
+        "h": 887
+      },
+      "artwork": {
+        "x": 86,
+        "y": 557,
+        "w": 1329,
+        "h": 887
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "28x40_p": {
+    "sizeKey": "28x40",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 711,
+      "h": 1016
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 142,
+        "y": 130,
+        "w": 1217,
+        "h": 1740
+      },
+      "artwork": {
+        "x": 142,
+        "y": 130,
+        "w": 1217,
+        "h": 1740
+      },
+      "frame": {
+        "x": 106,
+        "y": 94,
+        "w": 1289,
+        "h": 1812
+      },
+      "frameWidthPx": 36,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 245,
+        "y": 233,
+        "w": 1011,
+        "h": 1534
+      },
+      "artwork": {
+        "x": 142,
+        "y": 130,
+        "w": 1217,
+        "h": 1740
+      },
+      "frame": {
+        "x": 106,
+        "y": 94,
+        "w": 1289,
+        "h": 1812
+      },
+      "frameWidthPx": 36,
+      "mountBorderPx": 103
+    },
+    "unframed": {
+      "window": {
+        "x": 118,
+        "y": 96,
+        "w": 1265,
+        "h": 1808
+      },
+      "artwork": {
+        "x": 118,
+        "y": 96,
+        "w": 1265,
+        "h": 1808
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "28x40_l": {
+    "sizeKey": "28x40",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 1016,
+      "h": 711
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 109,
+        "y": 552,
+        "w": 1282,
+        "h": 897
+      },
+      "artwork": {
+        "x": 109,
+        "y": 552,
+        "w": 1282,
+        "h": 897
+      },
+      "frame": {
+        "x": 83,
+        "y": 526,
+        "w": 1334,
+        "h": 949
+      },
+      "frameWidthPx": 26,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 185,
+        "y": 628,
+        "w": 1130,
+        "h": 745
+      },
+      "artwork": {
+        "x": 109,
+        "y": 552,
+        "w": 1282,
+        "h": 897
+      },
+      "frame": {
+        "x": 83,
+        "y": 526,
+        "w": 1334,
+        "h": 949
+      },
+      "frameWidthPx": 26,
+      "mountBorderPx": 76
+    },
+    "unframed": {
+      "window": {
+        "x": 84,
+        "y": 534,
+        "w": 1332,
+        "h": 932
+      },
+      "artwork": {
+        "x": 84,
+        "y": 534,
+        "w": 1332,
+        "h": 932
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "30x40_p": {
+    "sizeKey": "30x40",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 762,
+      "h": 1016
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 127,
+        "y": 170,
+        "w": 1246,
+        "h": 1661
+      },
+      "artwork": {
+        "x": 127,
+        "y": 170,
+        "w": 1246,
+        "h": 1661
+      },
+      "frame": {
+        "x": 93,
+        "y": 136,
+        "w": 1314,
+        "h": 1729
+      },
+      "frameWidthPx": 34,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 225,
+        "y": 268,
+        "w": 1050,
+        "h": 1465
+      },
+      "artwork": {
+        "x": 127,
+        "y": 170,
+        "w": 1246,
+        "h": 1661
+      },
+      "frame": {
+        "x": 93,
+        "y": 136,
+        "w": 1314,
+        "h": 1729
+      },
+      "frameWidthPx": 34,
+      "mountBorderPx": 98
+    },
+    "unframed": {
+      "window": {
+        "x": 95,
+        "y": 127,
+        "w": 1310,
+        "h": 1747
+      },
+      "artwork": {
+        "x": 95,
+        "y": 127,
+        "w": 1310,
+        "h": 1747
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "30x40_l": {
+    "sizeKey": "30x40",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 1016,
+      "h": 762
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 110,
+        "y": 520,
+        "w": 1281,
+        "h": 961
+      },
+      "artwork": {
+        "x": 110,
+        "y": 520,
+        "w": 1281,
+        "h": 961
+      },
+      "frame": {
+        "x": 84,
+        "y": 494,
+        "w": 1333,
+        "h": 1013
+      },
+      "frameWidthPx": 26,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 186,
+        "y": 596,
+        "w": 1129,
+        "h": 809
+      },
+      "artwork": {
+        "x": 110,
+        "y": 520,
+        "w": 1281,
+        "h": 961
+      },
+      "frame": {
+        "x": 84,
+        "y": 494,
+        "w": 1333,
+        "h": 1013
+      },
+      "frameWidthPx": 26,
+      "mountBorderPx": 76
+    },
+    "unframed": {
+      "window": {
+        "x": 85,
+        "y": 501,
+        "w": 1331,
+        "h": 999
+      },
+      "artwork": {
+        "x": 85,
+        "y": 501,
+        "w": 1331,
+        "h": 999
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a0_p": {
+    "sizeKey": "a0",
+    "orientation": "p",
+    "sizeMm": {
+      "w": 841,
+      "h": 1189
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 129,
+        "y": 123,
+        "w": 1242,
+        "h": 1755
+      },
+      "artwork": {
+        "x": 129,
+        "y": 123,
+        "w": 1242,
+        "h": 1755
+      },
+      "frame": {
+        "x": 98,
+        "y": 92,
+        "w": 1304,
+        "h": 1817
+      },
+      "frameWidthPx": 31,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 203,
+        "y": 197,
+        "w": 1094,
+        "h": 1607
+      },
+      "artwork": {
+        "x": 129,
+        "y": 123,
+        "w": 1242,
+        "h": 1755
+      },
+      "frame": {
+        "x": 98,
+        "y": 92,
+        "w": 1304,
+        "h": 1817
+      },
+      "frameWidthPx": 31,
+      "mountBorderPx": 74
+    },
+    "unframed": {
+      "window": {
+        "x": 108,
+        "y": 93,
+        "w": 1284,
+        "h": 1815
+      },
+      "artwork": {
+        "x": 108,
+        "y": 93,
+        "w": 1284,
+        "h": 1815
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "a0_l": {
+    "sizeKey": "a0",
+    "orientation": "l",
+    "sizeMm": {
+      "w": 1189,
+      "h": 841
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 103,
+        "y": 543,
+        "w": 1294,
+        "h": 915
+      },
+      "artwork": {
+        "x": 103,
+        "y": 543,
+        "w": 1294,
+        "h": 915
+      },
+      "frame": {
+        "x": 80,
+        "y": 520,
+        "w": 1340,
+        "h": 961
+      },
+      "frameWidthPx": 23,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 157,
+        "y": 597,
+        "w": 1186,
+        "h": 807
+      },
+      "artwork": {
+        "x": 103,
+        "y": 543,
+        "w": 1294,
+        "h": 915
+      },
+      "frame": {
+        "x": 80,
+        "y": 520,
+        "w": 1340,
+        "h": 961
+      },
+      "frameWidthPx": 23,
+      "mountBorderPx": 54
+    },
+    "unframed": {
+      "window": {
+        "x": 82,
+        "y": 527,
+        "w": 1337,
+        "h": 946
+      },
+      "artwork": {
+        "x": 82,
+        "y": 527,
+        "w": 1337,
+        "h": 946
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "12x12_s": {
+    "sizeKey": "12x12",
+    "orientation": "s",
+    "sizeMm": {
+      "w": 305,
+      "h": 305
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 193,
+        "y": 443,
+        "w": 1114,
+        "h": 1114
+      },
+      "artwork": {
+        "x": 193,
+        "y": 443,
+        "w": 1114,
+        "h": 1114
+      },
+      "frame": {
+        "x": 116,
+        "y": 366,
+        "w": 1268,
+        "h": 1268
+      },
+      "frameWidthPx": 77,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 339,
+        "y": 589,
+        "w": 822,
+        "h": 822
+      },
+      "artwork": {
+        "x": 193,
+        "y": 443,
+        "w": 1114,
+        "h": 1114
+      },
+      "frame": {
+        "x": 116,
+        "y": 366,
+        "w": 1268,
+        "h": 1268
+      },
+      "frameWidthPx": 77,
+      "mountBorderPx": 146
+    },
+    "unframed": {
+      "window": {
+        "x": 125,
+        "y": 375,
+        "w": 1251,
+        "h": 1251
+      },
+      "artwork": {
+        "x": 125,
+        "y": 375,
+        "w": 1251,
+        "h": 1251
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "16x16_s": {
+    "sizeKey": "16x16",
+    "orientation": "s",
+    "sizeMm": {
+      "w": 406,
+      "h": 406
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 167,
+        "y": 417,
+        "w": 1167,
+        "h": 1167
+      },
+      "artwork": {
+        "x": 167,
+        "y": 417,
+        "w": 1167,
+        "h": 1167
+      },
+      "frame": {
+        "x": 107,
+        "y": 357,
+        "w": 1287,
+        "h": 1287
+      },
+      "frameWidthPx": 60,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 311,
+        "y": 561,
+        "w": 879,
+        "h": 879
+      },
+      "artwork": {
+        "x": 167,
+        "y": 417,
+        "w": 1167,
+        "h": 1167
+      },
+      "frame": {
+        "x": 107,
+        "y": 357,
+        "w": 1287,
+        "h": 1287
+      },
+      "frameWidthPx": 60,
+      "mountBorderPx": 144
+    },
+    "unframed": {
+      "window": {
+        "x": 112,
+        "y": 362,
+        "w": 1277,
+        "h": 1277
+      },
+      "artwork": {
+        "x": 112,
+        "y": 362,
+        "w": 1277,
+        "h": 1277
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "20x20_s": {
+    "sizeKey": "20x20",
+    "orientation": "s",
+    "sizeMm": {
+      "w": 508,
+      "h": 508
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 149,
+        "y": 399,
+        "w": 1202,
+        "h": 1202
+      },
+      "artwork": {
+        "x": 149,
+        "y": 399,
+        "w": 1202,
+        "h": 1202
+      },
+      "frame": {
+        "x": 99,
+        "y": 349,
+        "w": 1302,
+        "h": 1302
+      },
+      "frameWidthPx": 50,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 267,
+        "y": 517,
+        "w": 966,
+        "h": 966
+      },
+      "artwork": {
+        "x": 149,
+        "y": 399,
+        "w": 1202,
+        "h": 1202
+      },
+      "frame": {
+        "x": 99,
+        "y": 349,
+        "w": 1302,
+        "h": 1302
+      },
+      "frameWidthPx": 50,
+      "mountBorderPx": 118
+    },
+    "unframed": {
+      "window": {
+        "x": 103,
+        "y": 353,
+        "w": 1294,
+        "h": 1294
+      },
+      "artwork": {
+        "x": 103,
+        "y": 353,
+        "w": 1294,
+        "h": 1294
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  },
+  "30x30_s": {
+    "sizeKey": "30x30",
+    "orientation": "s",
+    "sizeMm": {
+      "w": 762,
+      "h": 762
+    },
+    "canvas": {
+      "w": 1500,
+      "h": 2000
+    },
+    "framed_m0": {
+      "window": {
+        "x": 125,
+        "y": 375,
+        "w": 1251,
+        "h": 1251
+      },
+      "artwork": {
+        "x": 125,
+        "y": 375,
+        "w": 1251,
+        "h": 1251
+      },
+      "frame": {
+        "x": 91,
+        "y": 341,
+        "w": 1319,
+        "h": 1319
+      },
+      "frameWidthPx": 34,
+      "mountBorderPx": 0
+    },
+    "framed_m1": {
+      "window": {
+        "x": 224,
+        "y": 474,
+        "w": 1053,
+        "h": 1053
+      },
+      "artwork": {
+        "x": 125,
+        "y": 375,
+        "w": 1251,
+        "h": 1251
+      },
+      "frame": {
+        "x": 91,
+        "y": 341,
+        "w": 1319,
+        "h": 1319
+      },
+      "frameWidthPx": 34,
+      "mountBorderPx": 99
+    },
+    "unframed": {
+      "window": {
+        "x": 92,
+        "y": 342,
+        "w": 1316,
+        "h": 1316
+      },
+      "artwork": {
+        "x": 92,
+        "y": 342,
+        "w": 1316,
+        "h": 1316
+      },
+      "frameWidthPx": 0,
+      "mountBorderPx": 0
+    }
+  }
+}

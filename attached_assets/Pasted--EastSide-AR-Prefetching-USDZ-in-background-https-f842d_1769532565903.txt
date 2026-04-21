@@ -1,0 +1,34 @@
+[EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=Liquid+error+%28snippets%2Fproduct-info+line+2%29%3A+invalid+url+input&size=16x20in&frame=natural&title=Profondo+Rosso+-+Michael+Strevens&mount=0&frameType=standard&scaleByWidth=1
+VM888 shopify-ar-widget.js:480 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"Liquid error (snippets/​product-info line 2)​:​ invalid url input" data-size=​"16" x 20"" data-frame=​"Natural Frame" data-title=​"Profondo Rosso - Michael Strevens" data-eastside-initialized=​"true">​…​</div>​
+VM888 shopify-ar-widget.js:480 [EastSide AR] Container dataset: {"wavImage":"Liquid error (snippets/product-info line 2): invalid url input","size":"16","frame":"Natural Frame","title":"Profondo Rosso - Michael Strevens","eastsideInitialized":"true"}
+VM888 shopify-ar-widget.js:480 [EastSide AR] Size appears truncated: 16 - checking buttons for full size...
+VM888 shopify-ar-widget.js:480 [EastSide AR] Could not determine ratio for size: 16
+VM888 shopify-ar-widget.js:480 [EastSide AR] Target ratio for size 16 : null
+VM888 shopify-ar-widget.js:480 [EastSide AR] === Finding best image for ratio: null ===
+VM888 shopify-ar-widget.js:480 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM888 shopify-ar-widget.js:480 [EastSide AR] Using fallback image with scale-by-width mode
+VM888 shopify-ar-widget.js:480 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM888 shopify-ar-widget.js:480 [EastSide AR] Raw values - imageUrl: Liquid error (snippets/product-info line 2): invalid url input size: 16 frame: Natural Frame frameType: standard scaleByWidth: true
+VM888 shopify-ar-widget.js:480 [EastSide AR] Found Shopify product ID: 7260296609924
+VM888 shopify-ar-widget.js:480 [EastSide AR] Found product in window.meta
+VM888 shopify-ar-widget.js:480 [EastSide AR] Looking for variant ID: 41815473881220
+VM888 shopify-ar-widget.js:480 [EastSide AR] Found current variant: undefined
+VM888 shopify-ar-widget.js:480 [EastSide AR] Size appears truncated, looking for size spans/buttons/radios...
+VM888 shopify-ar-widget.js:480 [EastSide AR] Size from span label: 16" x 20"
+VM888 shopify-ar-widget.js:480 [EastSide AR] Found 0 Yes/No option buttons
+VM888 shopify-ar-widget.js:480 [EastSide AR] === Detecting Box Frame Selection ===
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 1: Found 8 selected elements (excluding tabs)
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 2: Found 64 checked inputs
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 3: Found 0 Globo option elements
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 4: Found 0 selected swatches
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 5: Found 2 select elements
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 7: Found 36 upgrade/addon containers
+VM888 shopify-ar-widget.js:480 [EastSide AR] No box frame upgrade detected
+VM888 shopify-ar-widget.js:480 [EastSide AR] === Detecting Mount Selection ===
+VM888 shopify-ar-widget.js:480 [EastSide AR] Method 1: Found 0 potential mount containers
+VM888 shopify-ar-widget.js:480 [EastSide AR] No mount selection detected
+VM888 shopify-ar-widget.js:480 [EastSide AR] Globo mount detection result: false
+VM888 shopify-ar-widget.js:480 [EastSide AR] Size mapped: 16" x 20" → 16x20in
+VM888 shopify-ar-widget.js:480 [EastSide AR] Frame mapped: Natural Frame → natural
+VM888 shopify-ar-widget.js:480 [EastSide AR] Final config: {imageUrl: 'Liquid error (snippets/product-info line 2): invalid url input', size: '16x20in', frame: 'natural', title: 'Profondo Rosso - Michael Strevens', mount: '0', …}
+VM888 shopify-ar-widget.js:480 [EastSide AR] Widget visible: Frame selected: natural Image: Liquid error (snippets/product-info line 2): inval...

@@ -1,0 +1,38 @@
+[EastSide AR] Initializing AR widget v2.2.0
+shopify-ar-widget.js:470 [EastSide AR] Size mappings: 88 entries
+shopify-ar-widget.js:470 [EastSide AR] Frame mappings: 25 entries
+shopify-ar-widget.js:470 [EastSide AR] Watching product form for variant changes
+shopify-ar-widget.js:470 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​cdn.shopify.com/​s/​files/​1/​0588/​0568/​2308/​files/​Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200" data-size=​"18" x 24"" data-frame=​"White Frame" data-title=​"Krabobitz - Ori Toor" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js:470 [EastSide AR] Container dataset: {"wavImage":"//cdn.shopify.com/s/files/1/0588/0568/2308/files/Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200","size":"18","frame":"White Frame","title":"Krabobitz - Ori Toor","eastsideInitialized":"true"}
+shopify-ar-widget.js:470 [EastSide AR] Size appears truncated: 18 - checking buttons for full size...
+shopify-ar-widget.js:470 [EastSide AR] Could not determine ratio for size: 18
+shopify-ar-widget.js:470 [EastSide AR] Target ratio for size 18 : null
+shopify-ar-widget.js:470 [EastSide AR] === Finding best image for ratio: null ===
+shopify-ar-widget.js:470 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js:470 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js:470 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js:470 [EastSide AR] Raw values - imageUrl: //cdn.shopify.com/s/files/1/0588/0568/2308/files/Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200 size: 18 frame: White Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js:470 [EastSide AR] Found product from inline script
+shopify-ar-widget.js:470 [EastSide AR] Looking for variant ID: 56563782156665
+shopify-ar-widget.js:470 [EastSide AR] Found current variant: 18" x 24" / White Frame
+shopify-ar-widget.js:470 [EastSide AR] Size from Shopify variant: 18" x 24"
+shopify-ar-widget.js:470 [EastSide AR] Frame from Shopify variant: White Frame
+shopify-ar-widget.js:470 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js:470 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 7 selected elements (excluding tabs)
+shopify-ar-widget.js:470 [EastSide AR] Method 2: Found 64 checked inputs
+shopify-ar-widget.js:470 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js:470 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js:470 [EastSide AR] Method 5: Found 4 select elements
+shopify-ar-widget.js:470 [EastSide AR] Method 7: Found 36 upgrade/addon containers
+shopify-ar-widget.js:470 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js:470 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 0 potential mount containers
+shopify-ar-widget.js:470 [EastSide AR] No mount selection detected
+shopify-ar-widget.js:470 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js:470 [EastSide AR] Size mapped: 18" x 24" → 18x24in
+shopify-ar-widget.js:470 [EastSide AR] Frame mapped: White Frame → white
+shopify-ar-widget.js:470 [EastSide AR] Final config: {imageUrl: '//cdn.shopify.com/s/files/1/0588/0568/2308/files/L…es_ori-toor_krabobitz.jpg?v=1769520448&width=1200', size: '18x24in', frame: 'white', title: 'Krabobitz - Ori Toor', mount: '0', …}
+shopify-ar-widget.js:470 [EastSide AR] Widget loaded
+shopify-ar-widget.js:470 [EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0588%2F0568%2F2308%2Ffiles%2FLow_Res_ori-toor_krabobitz.jpg%3Fv%3D1769520448%26width%3D1200&size=18x24in&frame=white&title=Krabobitz+-+Ori+Toor&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js:470 [EastSide AR] USDZ prefetch complete - ready for instant AR

@@ -1,0 +1,51 @@
+[EastSide AR] Initializing AR widget v2.2.0
+shopify-ar-widget.js:470 [EastSide AR] Size mappings: 88 entries
+shopify-ar-widget.js:470 [EastSide AR] Frame mappings: 25 entries
+shopify-ar-widget.js:470 [EastSide AR] Initialized container 1
+shopify-ar-widget.js:470 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200" data-size=​"12" x 18"" data-frame=​"Natural Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js:470 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"12","frame":"Natural Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js:470 [EastSide AR] Size appears truncated: 12 - checking buttons for full size...
+shopify-ar-widget.js:470 [EastSide AR] Full size from selected button: 12" x 18"
+shopify-ar-widget.js:470 [EastSide AR] Using full size from buttons: 12" x 18"
+shopify-ar-widget.js:470 [EastSide AR] Parsed dimensions from size string: 12 x 18
+shopify-ar-widget.js:470 [EastSide AR] Detected ratio from dimensions: 12 x 18 = 2x3 (ratio: 1.500 )
+shopify-ar-widget.js:470 [EastSide AR] Size ratio from parsed dimensions: 12" x 18" → 2x3
+shopify-ar-widget.js:470 [EastSide AR] Target ratio for size 12" x 18" : 2x3
+shopify-ar-widget.js:470 [EastSide AR] === Finding best image for ratio: 2x3 ===
+shopify-ar-widget.js:470 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js:470 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js:470 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js:470 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 12" x 18" frame: Natural Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js:470 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js:470 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js:470 [EastSide AR] Looking for variant ID: 56555676533113
+shopify-ar-widget.js:470 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js:470 [EastSide AR] Size from select - text: undefined value: undefined using: 
+shopify-ar-widget.js:470 [EastSide AR] Frame from select - text: undefined value: undefined using: 
+shopify-ar-widget.js:470 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js:470 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 8 selected elements (excluding tabs)
+shopify-ar-widget.js:470 [EastSide AR] Method 2: Found 64 checked inputs
+shopify-ar-widget.js:470 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js:470 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js:470 [EastSide AR] Method 5: Found 2 select elements
+shopify-ar-widget.js:470 [EastSide AR] Method 7: Found 23 upgrade/addon containers
+shopify-ar-widget.js:470 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js:470 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 0 potential mount containers
+shopify-ar-widget.js:470 [EastSide AR] No mount selection detected
+shopify-ar-widget.js:470 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js:470 [EastSide AR] Size partial match:  → 8x12in
+shopify-ar-widget.js:470 [EastSide AR] Frame partial match:  → black
+shopify-ar-widget.js:470 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=1200', size: '8x12in', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js:470 [EastSide AR] Widget loaded
+shopify-ar-widget.js:470 [EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D1200&size=8x12in&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js:470 [EastSide AR] USDZ prefetch error: TypeError: Failed to fetch
+    at window2.fetch (shop_events_listener-3da45d37.js:1:7564)
+    at bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1:68123
+    at window.fetch (lb-upsell.js:1:114540)
+    at window.fetch (captain-plug-in.js:1:66707)
+    at ns.fetch (121_AR?variant=56555676533113:12243:30)
+    at Gt.window.fetch (discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2:18220)
+    at prefetchUSDZ (shopify-ar-widget.js:1580:5)
+    at shopify-ar-widget.js:1624:24

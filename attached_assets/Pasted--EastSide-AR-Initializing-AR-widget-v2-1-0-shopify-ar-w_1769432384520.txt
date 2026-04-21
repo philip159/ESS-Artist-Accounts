@@ -1,0 +1,35 @@
+[EastSide AR] Initializing AR widget v2.1.0
+shopify-ar-widget.js:191 [EastSide AR] Size mappings: 37 entries
+shopify-ar-widget.js:191 [EastSide AR] Frame mappings: 25 entries
+shopify-ar-widget.js:191 [EastSide AR] Initialized container 1
+shopify-ar-widget.js:191 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200" data-size=​"A2 - 16.5" x 23.4"" data-frame=​"Natural Frame" data-title=​"121_AR2" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js:191 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200","size":"A2 - 16.5","frame":"Natural Frame","title":"121_AR2","eastsideInitialized":"true"}
+shopify-ar-widget.js:191 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200 size: A2 - 16.5 frame: Natural Frame frameType: standard
+shopify-ar-widget.js:191 [EastSide AR] Found Shopify product ID: 15331605414265
+shopify-ar-widget.js:191 [EastSide AR] Found 2 Yes/No option buttons
+shopify-ar-widget.js:191 [EastSide AR] Yes/No button: yes borderColor: rgb(50, 50, 50) borderRed: 50
+shopify-ar-widget.js:191 [EastSide AR] Selected button (dark border): yes
+shopify-ar-widget.js:191 [EastSide AR] Yes/No button: no borderColor: rgb(220, 220, 220) borderRed: 220
+shopify-ar-widget.js:191 [EastSide AR] Mount enabled via Yes/No button detection
+shopify-ar-widget.js:191 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js:191 [EastSide AR] Method 1: Found 8 selected elements (excluding tabs)
+shopify-ar-widget.js:191 [EastSide AR] Method 2: Found 65 checked inputs
+shopify-ar-widget.js:191 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js:191 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js:191 [EastSide AR] Method 5: Found 2 select elements
+shopify-ar-widget.js:191 [EastSide AR] Method 7: Found 23 upgrade/addon containers
+shopify-ar-widget.js:191 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js:191 [EastSide AR] Size partial match: A2 - 16.5 → A2
+shopify-ar-widget.js:191 [EastSide AR] Frame mapped: Natural Frame → natural
+shopify-ar-widget.js:191 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/LF1_La…801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200', size: 'A2', frame: 'natural', title: '121_AR2', mount: '1', …}
+shopify-ar-widget.js:191 [EastSide AR] Widget loaded
+shopify-ar-widget.js:191 [EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg%3Fv%3D1728834900%26width%3D1200&size=A2&frame=natural&title=121_AR2&mount=1&frameType=standard
+shopify-ar-widget.js:191 [EastSide AR] USDZ prefetch error: TypeError: Failed to fetch
+    at bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1:68123
+    at shop_events_listener-3da45d37.js:1:7564
+    at window.fetch (lb-upsell.js:1:114540)
+    at captain-plug-in.js:1:66707
+    at ns.fetch (VM119 121_ar2:26:30)
+    at discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2:18220
+    at prefetchUSDZ (shopify-ar-widget.js:1082:5)
+    at shopify-ar-widget.js:1126:24

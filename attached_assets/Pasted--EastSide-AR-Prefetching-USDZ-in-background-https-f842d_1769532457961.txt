@@ -1,0 +1,33 @@
+[EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=Liquid+error+%28snippets%2Fproduct-info+line+2%29%3A+invalid+url+input&size=16x20in&frame=natural&title=Profondo+Rosso+-+Michael+Strevens&mount=0&frameType=standard&scaleByWidth=1
+/products/profondo-rosso-michael-strevens?view=ar-test&variant=41815473881220:1 Access to fetch at 'https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=Liquid+error+%28snippets%2Fproduct-info+line+2%29%3A+invalid+url+input&size=16x20in&frame=natural&title=Profondo+Rosso+-+Michael+Strevens&mount=0&frameType=standard&scaleByWidth=1' from origin 'https://eastsidestudiolondon.co.uk' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1  HEAD https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=Liquid+error+%28snippets%2Fproduct-info+line+2%29%3A+invalid+url+input&size=16x20in&frame=natural&title=Profondo+Rosso+-+Michael+Strevens&mount=0&frameType=standard&scaleByWidth=1 net::ERR_FAILED 400 (Bad Request)
+(anonymous) @ bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1
+(anonymous) @ shop_events_listener-3da45d37.js:1
+window.fetch @ lb-upsell.js:1
+window.fetch @ captain-plug-in.js:1
+ns.fetch @ profondo-rosso-michael-strevens?view=ar-test&variant=41815473782916:11024
+(anonymous) @ discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2
+prefetchUSDZ @ shopify-ar-widget.js:1691
+(anonymous) @ shopify-ar-widget.js:1803
+setTimeout
+init @ shopify-ar-widget.js:1803
+(anonymous) @ shopify-ar-widget.js:1874
+(anonymous) @ shopify-ar-widget.js:1880Understand this error
+shopify-ar-widget.js:480 [EastSide AR] USDZ prefetch error: TypeError: Failed to fetch
+    at bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1:68123
+    at shop_events_listener-3da45d37.js:1:7564
+    at window.fetch (lb-upsell.js:1:114540)
+    at window.fetch (captain-plug-in.js:1:66707)
+    at ns.fetch (profondo-rosso-michael-strevens?view=ar-test&variant=41815473782916:11024:30)
+    at discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2:18239
+    at prefetchUSDZ (shopify-ar-widget.js:1691:5)
+    at shopify-ar-widget.js:1803:24
+2bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1   Uncaught (in promise) TypeError: Failed to fetch
+    at bfcfee988w5aeb613cpc8e4bc33m6693e112m.js:1:68123
+    at shop_events_listener-3da45d37.js:1:7564
+    at window.fetch (lb-upsell.js:1:114540)
+    at window.fetch (captain-plug-in.js:1:66707)
+    at ns.fetch (profondo-rosso-michael-strevens?view=ar-test&variant=41815473782916:11024:30)
+    at discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2:18239
+    at prefetchUSDZ (shopify-ar-widget.js:1691:5)
+    at shopify-ar-widget.js:1803:24

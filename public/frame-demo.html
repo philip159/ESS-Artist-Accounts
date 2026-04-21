@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .product-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .main-image {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .thumbnails {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .thumbnail {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid transparent;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s;
+    }
+    
+    .thumbnail.active {
+      border-color: #000;
+    }
+    
+    .thumbnail img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    /* Frame composite */
+    .frame-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease-out;
+    }
+    
+    .artwork-layer {
+      position: absolute;
+      object-fit: cover;
+      transition: all 0.4s ease-out;
+      z-index: 1;
+    }
+    
+    .frame-layer {
+      position: relative;
+      z-index: 2;
+      transition: all 0.4s ease-out;
+      pointer-events: none;
+    }
+    
+    .static-image {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      display: none;
+    }
+    
+    .static-image.visible {
+      display: block;
+    }
+    
+    .frame-container.hidden {
+      display: none;
+    }
+    
+    /* Product info */
+    .product-info {
+      padding: 20px 0;
+    }
+    
+    .product-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+    
+    .product-artist {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .product-price {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    
+    .option-group {
+      margin-bottom: 24px;
+    }
+    
+    .option-label {
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .option-value {
+      color: #666;
+      font-weight: 400;
+    }
+    
+    .option-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .option-btn {
+      padding: 10px 18px;
+      border: 2px solid #ddd;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    
+    .option-btn:hover {
+      border-color: #999;
+    }
+    
+    .option-btn.active {
+      border-color: #000;
+      background: #000;
+      color: white;
+    }
+    
+    .option-btn.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
+    /* Frame swatches */
+    .frame-swatch {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      padding: 4px;
+      cursor: pointer;
+      border: 2px solid #ddd;
+      background: white;
+      transition: all 0.2s;
+    }
+    
+    .frame-swatch:hover {
+      border-color: #999;
+    }
+    
+    .frame-swatch.active {
+      border-color: #000;
+    }
+    
+    .frame-swatch img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    /* Add-ons section */
+    .addons-section {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    
+    .addon-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .addon-item:hover {
+      border-color: #999;
+    }
+    
+    .addon-item.selected {
+      border-color: #000;
+      background: #f9f9f9;
+    }
+    
+    .addon-checkbox {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    
+    .addon-item.selected .addon-checkbox {
+      background: #000;
+      border-color: #000;
+    }
+    
+    .addon-item.selected .addon-checkbox::after {
+      content: '✓';
+      color: white;
+      font-size: 12px;
+    }
+    
+    .addon-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    
+    .addon-details {
+      flex: 1;
+    }
+    
+    .addon-name {
+      font-weight: 500;
+    }
+    
+    .addon-description {
+      font-size: 13px;
+      color: #666;
+    }
+    
+    .addon-price {
+      font-weight: 600;
+    }
+    
+    /* Add to cart */
+    .add-to-cart {
+      width: 100%;
+      padding: 16px;
+      background: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: opacity 0.2s;
+    }
+    
+    .add-to-cart:hover {
+      opacity: 0.9;
+    }
+    
+    .total-price {
+      text-align: center;
+      margin-top: 10px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-page">
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="main-image" id="mainImage">
+        <div class="frame-container" id="frameContainer">
+          <img class="artwork-layer" id="artworkLayer" src="https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_2.jpg?v=1731337222&width=800" alt="Artwork">
+          <img class="frame-layer" id="frameLayer" src="https://www.pstrstudio.com/cdn/shop/files/OAK_50X70_88b5d690-96ef-42d6-854f-5cbc2fbfdfaa.png?v=1728925555" alt="Frame">
+        </div>
+        <img class="static-image" id="staticImage" src="" alt="Static">
+      </div>
+      
+      <div class="thumbnails" id="thumbnails">
+        <div class="thumbnail active" data-slide="framed">
+          <div style="position: relative; width: 60px; height: 60px;">
+            <img src="https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_2.jpg?v=1731337222&width=100" style="position: absolute; width: 45px; height: 60px; top: 0; left: 7px; z-index: 1;">
+            <img src="https://www.pstrstudio.com/cdn/shop/files/OAK_50X70_88b5d690-96ef-42d6-854f-5cbc2fbfdfaa.png?v=1728925555" style="position: absolute; width: 60px; height: 60px; top: 0; left: 0; z-index: 2; object-fit: contain;">
+          </div>
+        </div>
+        <div class="thumbnail" data-slide="room">
+          <img src="https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_22.jpg?v=1731337222&width=200" alt="Room">
+        </div>
+        <div class="thumbnail" data-slide="detail">
+          <img src="https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_3.jpg?v=1731337222&width=200" alt="Detail">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Product Info -->
+    <div class="product-info">
+      <h1 class="product-title">Parallel</h1>
+      <p class="product-artist">Carla Petelski</p>
+      <p class="product-price" id="basePrice">$72</p>
+      
+      <!-- Size -->
+      <div class="option-group">
+        <div class="option-label">Size: <span class="option-value" id="sizeValue">50 x 70 cm</span></div>
+        <div class="option-buttons" id="sizeButtons">
+          <button class="option-btn" data-size="small">30 x 40 cm</button>
+          <button class="option-btn active" data-size="medium">50 x 70 cm</button>
+          <button class="option-btn" data-size="large">70 x 100 cm</button>
+        </div>
+      </div>
+      
+      <!-- Frame -->
+      <div class="option-group">
+        <div class="option-label">Frame: <span class="option-value" id="frameValue">Natural Oak</span></div>
+        <div class="option-buttons" id="frameButtons">
+          <button class="option-btn" data-frame="none">Unframed</button>
+          <button class="frame-swatch active" data-frame="oak" title="Natural Oak">
+            <img src="https://www.pstrstudio.com/cdn/shop/files/Natural_oak_close_V2_08562b1e-8b7b-4103-8940-711f7ad8fd24.png?v=1728925514&width=80" alt="Oak">
+          </button>
+          <button class="frame-swatch" data-frame="black" title="Black Oak">
+            <img src="https://www.pstrstudio.com/cdn/shop/files/Black_oak_corner_e966c1a2-4b99-4cdb-a212-2c32aa83b0cb.png?v=1728925516&width=80" alt="Black">
+          </button>
+          <button class="frame-swatch" data-frame="white" title="White Oak">
+            <img src="https://www.pstrstudio.com/cdn/shop/files/White_oak_corner_3.png?v=1728926755&width=80" alt="White">
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mount (as variant) -->
+      <div class="option-group">
+        <div class="option-label">Mount: <span class="option-value" id="mountValue">No Mount</span></div>
+        <div class="option-buttons" id="mountButtons">
+          <button class="option-btn active" data-mount="none">No Mount</button>
+          <button class="option-btn" data-mount="25mm">25mm Border</button>
+          <button class="option-btn" data-mount="50mm">50mm Border</button>
+        </div>
+      </div>
+      
+      <!-- Add-ons (separate products) -->
+      <div class="addons-section">
+        <div class="option-label">Upgrades</div>
+        
+        <div class="addon-item" data-addon="box-frame" data-price="105.95">
+          <div class="addon-checkbox"></div>
+          <img class="addon-image" src="https://www.pstrstudio.com/cdn/shop/files/Black_oak_corner_e966c1a2-4b99-4cdb-a212-2c32aa83b0cb.png?v=1728925516&width=80" alt="Box Frame">
+          <div class="addon-details">
+            <div class="addon-name">Box Frame Upgrade</div>
+            <div class="addon-description">Premium deep frame, gallery-style</div>
+          </div>
+          <div class="addon-price">+ €105.95</div>
+        </div>
+        
+        <div class="addon-item" data-addon="museum-glass" data-price="49.00">
+          <div class="addon-checkbox"></div>
+          <div class="addon-details">
+            <div class="addon-name">Museum Glass</div>
+            <div class="addon-description">Anti-reflective, UV protection</div>
+          </div>
+          <div class="addon-price">+ €49.00</div>
+        </div>
+        
+        <div class="addon-item" data-addon="paper-upgrade" data-price="25.00">
+          <div class="addon-checkbox"></div>
+          <div class="addon-details">
+            <div class="addon-name">Hahnemühle Paper</div>
+            <div class="addon-description">German fine art paper, 310gsm</div>
+          </div>
+          <div class="addon-price">+ €25.00</div>
+        </div>
+      </div>
+      
+      <button class="add-to-cart">Add to Cart</button>
+      <p class="total-price">Total: <strong id="totalPrice">$72.00</strong></p>
+    </div>
+  </div>
+
+  <script>
+    // Frame templates by size
+    const frameTemplates = {
+      oak: {
+        small: 'https://www.pstrstudio.com/cdn/shop/files/OAK_30X40_thin_3.png?v=9540393662363655948',
+        medium: 'https://www.pstrstudio.com/cdn/shop/files/OAK_50X70_88b5d690-96ef-42d6-854f-5cbc2fbfdfaa.png?v=1728925555',
+        large: 'https://www.pstrstudio.com/cdn/shop/files/OAK_70X100_ca9a44e0-d68c-4e9e-89ce-d169e8d923bc.png?v=1728925555'
+      },
+      black: {
+        small: 'https://www.pstrstudio.com/cdn/shop/files/BLACK_30X40_thin.png?v=1728925555',
+        medium: 'https://www.pstrstudio.com/cdn/shop/files/BLACK_50X70.png?v=1728925555',
+        large: 'https://www.pstrstudio.com/cdn/shop/files/BLACK_70X100.png?v=1728925555'
+      },
+      white: {
+        small: 'https://www.pstrstudio.com/cdn/shop/files/WHITE_30X40_thin.png?v=1728925555',
+        medium: 'https://www.pstrstudio.com/cdn/shop/files/WHITE_50X70.png?v=1728925555',
+        large: 'https://www.pstrstudio.com/cdn/shop/files/WHITE_70X100.png?v=1728925555'
+      }
+    };
+    
+    // Size dimensions
+    const sizes = {
+      small: {
+        frameWidth: 280,
+        frameHeight: 373,
+        artworkWidth: 210,
+        artworkHeight: 280,
+        artworkTop: 47,
+        artworkLeft: 35,
+        price: 39
+      },
+      medium: {
+        frameWidth: 380,
+        frameHeight: 532,
+        artworkWidth: 286,
+        artworkHeight: 400,
+        artworkTop: 66,
+        artworkLeft: 47,
+        price: 50
+      },
+      large: {
+        frameWidth: 480,
+        frameHeight: 686,
+        artworkWidth: 364,
+        artworkHeight: 520,
+        artworkTop: 83,
+        artworkLeft: 58,
+        price: 72
+      }
+    };
+    
+    const sizeLabels = {
+      small: '30 x 40 cm',
+      medium: '50 x 70 cm',
+      large: '70 x 100 cm'
+    };
+    
+    const frameLabels = {
+      none: 'Unframed',
+      oak: 'Natural Oak',
+      black: 'Black Oak',
+      white: 'White Oak'
+    };
+    
+    const mountLabels = {
+      none: 'No Mount',
+      '25mm': '25mm Border',
+      '50mm': '50mm Border'
+    };
+    
+    const staticImages = {
+      room: 'https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_22.jpg?v=1731337222&width=800',
+      detail: 'https://www.pstrstudio.com/cdn/shop/files/ArtistCarla11Parallel_PSTRstudio_3.jpg?v=1731337222&width=800'
+    };
+    
+    // State
+    let currentSize = 'medium';
+    let currentFrame = 'oak';
+    let currentMount = 'none';
+    let currentSlide = 'framed';
+    let selectedAddons = new Set();
+    
+    // Elements
+    const frameContainer = document.getElementById('frameContainer');
+    const frameLayer = document.getElementById('frameLayer');
+    const artworkLayer = document.getElementById('artworkLayer');
+    const staticImage = document.getElementById('staticImage');
+    
+    function updateDisplay() {
+      const size = sizes[currentSize];
+      
+      // Update frame image
+      if (currentFrame !== 'none' && frameTemplates[currentFrame]) {
+        frameLayer.src = frameTemplates[currentFrame][currentSize];
+        frameContainer.classList.remove('hidden');
+        
+        // Apply dimensions with animation
+        frameLayer.style.width = size.frameWidth + 'px';
+        frameLayer.style.height = size.frameHeight + 'px';
+        
+        artworkLayer.style.width = size.artworkWidth + 'px';
+        artworkLayer.style.height = size.artworkHeight + 'px';
+        artworkLayer.style.top = size.artworkTop + 'px';
+        artworkLayer.style.left = size.artworkLeft + 'px';
+      } else {
+        // Unframed - just show artwork
+        frameContainer.classList.remove('hidden');
+        frameLayer.style.opacity = '0';
+        artworkLayer.style.width = size.artworkWidth + 'px';
+        artworkLayer.style.height = size.artworkHeight + 'px';
+        artworkLayer.style.top = '50%';
+        artworkLayer.style.left = '50%';
+        artworkLayer.style.transform = 'translate(-50%, -50%)';
+      }
+      
+      if (currentFrame !== 'none') {
+        frameLayer.style.opacity = '1';
+        artworkLayer.style.transform = 'none';
+      }
+      
+      // Update labels
+      document.getElementById('sizeValue').textContent = sizeLabels[currentSize];
+      document.getElementById('frameValue').textContent = frameLabels[currentFrame];
+      document.getElementById('mountValue').textContent = mountLabels[currentMount];
+      
+      // Update price
+      updatePrice();
+    }
+    
+    function updatePrice() {
+      let total = sizes[currentSize].price;
+      
+      // Add frame price
+      if (currentFrame !== 'none') {
+        total += 80; // Frame price
+      }
+      
+      // Add mount price
+      if (currentMount === '25mm') total += 20;
+      if (currentMount === '50mm') total += 30;
+      
+      // Add addons
+      selectedAddons.forEach(addon => {
+        const el = document.querySelector(`[data-addon="${addon}"]`);
+        if (el) total += parseFloat(el.dataset.price);
+      });
+      
+      document.getElementById('basePrice').textContent = '$' + sizes[currentSize].price;
+      document.getElementById('totalPrice').textContent = '$' + total.toFixed(2);
+    }
+    
+    function showSlide(slide) {
+      currentSlide = slide;
+      
+      // Update thumbnails
+      document.querySelectorAll('.thumbnail').forEach(t => {
+        t.classList.toggle('active', t.dataset.slide === slide);
+      });
+      
+      if (slide === 'framed') {
+        frameContainer.classList.remove('hidden');
+        staticImage.classList.remove('visible');
+      } else {
+        frameContainer.classList.add('hidden');
+        staticImage.src = staticImages[slide];
+        staticImage.classList.add('visible');
+      }
+    }
+    
+    // Size buttons
+    document.querySelectorAll('#sizeButtons .option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#sizeButtons .option-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentSize = btn.dataset.size;
+        updateDisplay();
+      });
+    });
+    
+    // Frame buttons
+    document.querySelectorAll('#frameButtons button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#frameButtons button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFrame = btn.dataset.frame;
+        updateDisplay();
+      });
+    });
+    
+    // Mount buttons
+    document.querySelectorAll('#mountButtons .option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#mountButtons .option-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentMount = btn.dataset.mount;
+        updateDisplay();
+      });
+    });
+    
+    // Thumbnails
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+      thumb.addEventListener('click', () => showSlide(thumb.dataset.slide));
+    });
+    
+    // Addon items
+    document.querySelectorAll('.addon-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const addon = item.dataset.addon;
+        if (selectedAddons.has(addon)) {
+          selectedAddons.delete(addon);
+          item.classList.remove('selected');
+        } else {
+          selectedAddons.add(addon);
+          item.classList.add('selected');
+        }
+        updatePrice();
+      });
+    });
+    
+    // Initialize
+    updateDisplay();
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+We want to recreate the fast “frame + mount preview” experience used by sites like PSTR studio, but in our own Shopify theme code.
+
+Goal
+
+On collection pages: clicking a frame colour button updates the frame overlay for all visible product cards at once (instant, no page reload).
+
+On product pages: choosing size and frame updates the preview so the frame and mount look correct for that selected size.
+
+Not every artwork supports a mount. Only certain products should show a mount toggle and mount overlay.
+
+Core idea (how the preview works)
+
+We are not generating new images on click.
+
+We render a stack of layers:
+
+Shadow overlay (optional)
+
+Artwork image (inset inside a “window”)
+
+Mount overlay (optional, transparent centre)
+
+Frame overlay (transparent centre)
+
+Switching options should be “fast” because we only toggle CSS classes (opacity/display) and swap overlay image URLs, which are small and cached.
+
+Mount availability (key requirement)
+
+Add a Shopify boolean product metafield: custom.has_mount
+
+true = product supports mount option
+
+false = no mount UI, no mount overlay, no mount state for that product
+
+Best approach (implementation plan)
+
+Liquid output
+
+In the product card and PDP preview markup, output a wrapper with data attributes:
+
+data-product-id
+
+data-has-mount (from product.metafields.custom.has_mount)
+
+data-selected-frame (default)
+
+data-selected-size (default variant size)
+
+Always render the frame overlay <img>.
+
+Only render the mount overlay <img> AND the mount toggle UI if data-has-mount is true.
+
+Variant/option mapping
+
+We need a mapping from (size, frame colour) → correct overlay image URL.
+
+For MVP:
+
+Store overlay URLs in a product metafield (JSON) or a metaobject reference, e.g.
+custom.preview_assets = {
+"50x70": { "oak": "...", "black": "...", "white": "..." , "mount_white": "..." },
+"70x100": { ... }
+}
+
+JS reads this config and swaps the src/srcset of the frame/mount overlay images on selection.
+
+Layout/inset rules
+
+The artwork “window” is controlled by CSS padding or CSS variables (percent-based) so it scales responsively.
+
+When mount is enabled, apply a wrapper class like .has-mount which increases padding (artwork becomes smaller inside the mount).
+
+If product has_mount is false, never apply .has-mount and never show the mount toggle.
+
+Collection page global controls
+
+Frame colour selector at top triggers:
+
+For each visible product card: update its frame overlay to chosen colour
+
+Mount toggle (if we add one globally) should:
+
+Only affect cards where data-has-mount=true
+
+Cards without mount should be unchanged (no UI glitch)
+
+Edge cases
+
+If a user has mount enabled and selects a size/variant that doesn’t support mount (if that can happen), force mount off and disable the toggle.
+
+Preload: when a user first interacts with frame/mount controls, preload the most likely overlay URLs for the active selection to keep it instant.
+
+What I need from the app
+
+The Replit app should help generate and maintain the per-product overlay config:
+
+Build the JSON mapping for each product (size → frame colour → overlay URL)
+
+Optionally validate assets exist and are correct dimensions
+
+Output in a Shopify-friendly format (metafield JSON or metaobject entries) we can import/update
+
+Deliverable
+
+Theme code that renders the layered preview
+
+JS that updates overlays instantly on frame/size/mount changes
+
+Metafield-driven mount availability: custom.has_mount controls whether mount UI exists per product

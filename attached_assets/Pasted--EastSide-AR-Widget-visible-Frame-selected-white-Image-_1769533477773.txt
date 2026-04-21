@@ -1,0 +1,23 @@
+[EastSide AR] Widget visible: Frame selected: white Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Container found: 
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"12","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Size from Size: label: 12" x 18"
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Size from buttons/labels: 12" x 18"
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Parsed dimensions from size string: 12 x 18
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Detected ratio from dimensions: 12 x 18 = 2x3 (ratio: 1.500 )
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Size ratio from parsed dimensions: 12" x 18" → 2x3
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Target ratio for size 12" x 18" : 2x3
+VM27961 shopify-ar-widget.js:480 [EastSide AR] === Finding best image for ratio: 2x3 ===
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Using fallback image with scale-by-width mode
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 12" x 18" frame: White Frame frameType: standard scaleByWidth: true
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Found Shopify product ID: 15331131490681
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Found product in window.meta
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Looking for variant ID: 56555676500345
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Found current variant: undefined
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Found 0 Yes/No option buttons
+VM27961 shopify-ar-widget.js:480 [EastSide AR] === Detecting Box Frame Selection ===
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Method 1: Found 8 selected elements (excluding tabs)
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Method 2: Found 64 checked inputs
+VM27961 shopify-ar-widget.js:480 [EastSide AR] Method 3: Found 0 Globo option elements

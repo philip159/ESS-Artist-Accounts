@@ -1,0 +1,94 @@
+:root {
+  --text-color: 26 26 26;       /* rgb channels only */
+  --input-height: 3.125rem;     /* matches your desktop selector height */
+  --rounded-input: 12px;
+  --text-sm: 0.875rem;
+}
+
+/* Label + selected text */
+.variant-picker__option--mount .variant-picker__option-label--mount {
+  color: rgb(var(--text-color));
+  font-weight: 600;
+}
+
+.variant-picker__option--mount .variant-picker__option-selected--mount {
+  color: rgb(var(--text-color));
+  font-weight: 400;
+}
+
+/* Split container */
+.variant-picker__option-values--mount {
+  display: flex;
+  gap: 0;
+}
+
+/* Mount option boxes - split bar style */
+.mount-option-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid rgba(var(--text-color) / 0.2);
+  border-radius: 0;
+  padding: 0.75rem 1rem;
+  height: var(--input-height);
+  flex: 1;
+  color: rgba(var(--text-color) / 0.7);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: -1px; /* overlaps borders for a single-divider look */
+}
+
+/* First and last segment rounding */
+.variant-picker__option-values--mount .mount-option-box:first-child {
+  border-top-left-radius: var(--rounded-input);
+  border-bottom-left-radius: var(--rounded-input);
+  margin-left: 0;
+}
+
+.variant-picker__option-values--mount .mount-option-box:last-child {
+  border-top-right-radius: var(--rounded-input);
+  border-bottom-right-radius: var(--rounded-input);
+}
+
+/* Hover */
+.mount-option-box:hover {
+  background: white;
+  color: rgb(var(--text-color));
+  z-index: 2;
+  position: relative;
+}
+
+/* Selected (class OR checked radio) */
+.mount-option-box.is-selected,
+.mount-option-box:has(input:checked) {
+  border-color: rgb(var(--text-color));
+  border-width: 1px;
+  color: rgb(var(--text-color));
+  background: white;
+  z-index: 3;
+  position: relative;
+}
+
+.mount-option-box__label {
+  font-size: var(--text-sm);
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Optional hidden-radio utility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

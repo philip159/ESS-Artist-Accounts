@@ -1,0 +1,42 @@
+<div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200" data-size=​"24" x 36"" data-frame=​"White Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"24","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Size appears truncated: 24 - checking buttons for full size...
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Full size from selected button: 24" x 36"
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Using full size from buttons: 24" x 36"
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Parsed dimensions from size string: 24 x 36
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Detected ratio from dimensions: 24 x 36 = 2x3 (ratio: 1.500 )
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Size ratio from parsed dimensions: 24" x 36" → 2x3
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Target ratio for size 24" x 36" : 2x3
+VM6212 shopify-ar-widget.js:470 [EastSide AR] === Finding best image for ratio: 2x3 ===
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Using fallback image with scale-by-width mode
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 24" x 36" frame: White Frame frameType: standard scaleByWidth: true
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Found Shopify product ID: 15331131490681
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Found product in window.meta
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Looking for variant ID: 56555676762489
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Found current variant: undefined
+VM6212 shopify-ar-widget.js:470 [EastSide AR] Size from select - text: undefined value: undefined using: 
+shopify-ar-widget.js:470 [EastSide AR] Initializing AR widget v2.2.0
+shopify-ar-widget.js:470 [EastSide AR] Size mappings: 88 entries
+shopify-ar-widget.js:470 [EastSide AR] Frame mappings: 25 entries
+shopify-ar-widget.js:470 [EastSide AR] Initialized container 1
+shopify-ar-widget.js:470 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200" data-size=​"28" x 40" (70cm 100cm)" data-frame=​"White Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js:470 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"28","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js:470 [EastSide AR] Size appears truncated: 28 - checking buttons for full size...
+shopify-ar-widget.js:470 [EastSide AR] Full size from selected button: 28" x 40" (70cm x 100cm)
+shopify-ar-widget.js:470 [EastSide AR] Using full size from buttons: 28" x 40" (70cm x 100cm)
+shopify-ar-widget.js:470 [EastSide AR] Parsed dimensions from size string: 28 x 40
+shopify-ar-widget.js:470 [EastSide AR] Detected ratio from dimensions: 28 x 40 = a-ratio (ratio: 1.429 )
+shopify-ar-widget.js:470 [EastSide AR] Size ratio from parsed dimensions: 28" x 40" (70cm x 100cm) → a-ratio
+shopify-ar-widget.js:470 [EastSide AR] Target ratio for size 28" x 40" (70cm x 100cm) : a-ratio
+shopify-ar-widget.js:470 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js:470 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js:470 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js:470 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js:470 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 28" x 40" (70cm x 100cm) frame: White Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js:470 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js:470 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js:470 [EastSide AR] Looking for variant ID: 56555676893561
+shopify-ar-widget.js:470 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js:470 [EastSide AR] Size from select - text: undefined value: undefined using: 

@@ -1,0 +1,59 @@
+(function() {
+  'use strict';
+
+  // East Side Studio AR Widget for Shopify
+  // This widget adds "View in Your Space" AR functionality to product pages
+
+  const WIDGET_VERSION = '2.4.0';  // Debug base URL + image URL cleaning
+  // Use custom base URL, or the development URL for testing, or production
+  // Production URL - custom domain for published app
+  const PRODUCTION_URL = 'https://upload.eastsidestudiolondon.co.uk';
+  const DEV_URL = 'https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev';
+  
+  // Auto-detect: use production URL if available, otherwise dev URL
+  // Can be overridden by setting window.EASTSIDE_AR_BASE_URL before loading widget
+  const AR_VIEWER_BASE_URL = window.EASTSIDE_AR_BASE_URL || PRODUCTION_URL;
+  
+  // Debug: Log which base URL is being used
+  console.log('[EastSide AR] Base URL override:', window.EASTSIDE_AR_BASE_URL);
+  console.log('[EastSide AR] Using base URL:', AR_VIEWER_BASE_URL);
+  
+  // Generate or retrieve session ID for analytics
+  let sessionId = sessionStorage.getItem('eastside_ar_session');
+  if (!sessionId) {
+    sessionId = 'sess_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+    sessionStorage.setItem('eastside_ar_session', sessionId);
+  }
+
+  // Update cart attributes to include AR session for conversion tracking
+  // This is hidden from customers but included in order data
+  async function updateCartWithArSession(productHandle) {
+    try {
+      // Get current cart
+      const cartResponse = await fetch('/cart.js');
+      if (!cartResponse.ok) return;
+      
+      const cart = await cartResponse.json();
+      const currentAttributes = cart.attributes || {};
+      
+      // Store AR session info - underscore prefix keeps it hidden in most themes
+      const arData = {
+        ...currentAttributes,
+        _ar_session_id: sessionId,
+        _ar_product: productHandle,
+        _ar_timestamp: new Date().toISOString()
+      };
+      
+      // Update cart attributes
+      await fetch('/cart/update.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ attributes: arData })
+      });
+      
+      console.debug('[EastSide AR] Cart updated with AR session:', sessionId);
+    } catch (err) {
+      // Silently fail - this is enhancement only
+      console.debug('[EastSide AR] Cart attribute update failed:', err);
+    }
+  }

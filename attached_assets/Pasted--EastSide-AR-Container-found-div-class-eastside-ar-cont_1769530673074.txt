@@ -1,0 +1,38 @@
+[EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200" data-size=​"18" x 24"" data-frame=​"Black Frame" data-title=​"Krabobitz - Ori Toor" data-eastside-initialized=​"true">​…​</div>​
+VM652 shopify-ar-widget.js:470 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200","size":"18","frame":"Black Frame","title":"Krabobitz - Ori Toor","eastsideInitialized":"true"}
+VM652 shopify-ar-widget.js:470 [EastSide AR] Size appears truncated: 18 - checking buttons for full size...
+VM652 shopify-ar-widget.js:470 [EastSide AR] Could not determine ratio for size: 18
+VM652 shopify-ar-widget.js:470 [EastSide AR] Target ratio for size 18 : null
+VM652 shopify-ar-widget.js:470 [EastSide AR] === Finding best image for ratio: null ===
+VM652 shopify-ar-widget.js:470 [EastSide AR] Available images: Object
+VM652 shopify-ar-widget.js:470 [EastSide AR] Using fallback image with scale-by-width mode
+VM652 shopify-ar-widget.js:470 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM652 shopify-ar-widget.js:470 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Res_ori-toor_krabobitz.jpg?v=1769520448&width=1200 size: 18 frame: Black Frame frameType: standard scaleByWidth: true
+VM652 shopify-ar-widget.js:470 [EastSide AR] Found Shopify product ID: 15333248631161
+VM652 shopify-ar-widget.js:470 [EastSide AR] Found product in window.meta
+VM652 shopify-ar-widget.js:470 [EastSide AR] Looking for variant ID: 56563782123897
+VM652 shopify-ar-widget.js:470 [EastSide AR] Found current variant: undefined
+VM652 shopify-ar-widget.js:470 [EastSide AR] Size appears truncated, looking for size buttons/radios...
+VM652 shopify-ar-widget.js:470 [EastSide AR] Found 0 Yes/No option buttons
+VM652 shopify-ar-widget.js:470 [EastSide AR] === Detecting Box Frame Selection ===
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 8 selected elements (excluding tabs)
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 2: Found 64 checked inputs
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 3: Found 0 Globo option elements
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 4: Found 0 selected swatches
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 5: Found 2 select elements
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 7: Found 36 upgrade/addon containers
+VM652 shopify-ar-widget.js:470 [EastSide AR] No box frame upgrade detected
+VM652 shopify-ar-widget.js:470 [EastSide AR] === Detecting Mount Selection ===
+VM652 shopify-ar-widget.js:470 [EastSide AR] Method 1: Found 0 potential mount containers
+VM652 shopify-ar-widget.js:470 [EastSide AR] No mount selection detected
+VM652 shopify-ar-widget.js:470 [EastSide AR] Globo mount detection result: false
+VM652 shopify-ar-widget.js:470 [EastSide AR] Size partial match: 18 → 8x12in
+VM652 shopify-ar-widget.js:470 [EastSide AR] Frame mapped: Black Frame → black
+VM652 shopify-ar-widget.js:470 [EastSide AR] Final config: Object
+VM652 shopify-ar-widget.js:470 [EastSide AR] Button clicked, productConfig: Object
+VM652 shopify-ar-widget.js:470 [EastSide AR] Opening AR viewer...
+VM652 shopify-ar-widget.js:470 [EastSide AR] Device detection - iOS: false Android: false
+VM652 shopify-ar-widget.js:470 [EastSide AR] Opening desktop AR modal
+krabobitz-ori-toor?view=ar-test&variant=56563782123897:1 Access to resource at 'https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/analytics' from origin 'https://eastsidestudiolondon.co.uk' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'.Understand this error
+f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/analytics:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+shopify-ar-widget.js:470 [EastSide AR] USDZ prefetch complete - ready for instant AR

@@ -1,0 +1,31 @@
+[EastSide AR] Initializing AR widget v2.1.0
+shopify-ar-widget.js:191 [EastSide AR] Size mappings: 37 entries
+shopify-ar-widget.js:191 [EastSide AR] Frame mappings: 25 entries
+shopify-ar-widget.js:191 [EastSide AR] Initialized container 1
+shopify-ar-widget.js:191 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​cdn.shopify.com/​s/​files/​1/​0588/​0568/​2308/​files/​LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200" data-size=​"A2 - 16.5" x 23.4"" data-frame=​"Natural Frame" data-title=​"Gourmet Deli - Leland Foster" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js:191 [EastSide AR] Container dataset: {"wavImage":"//cdn.shopify.com/s/files/1/0588/0568/2308/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200","size":"A2 - 16.5","frame":"Natural Frame","title":"Gourmet Deli - Leland Foster","eastsideInitialized":"true"}
+shopify-ar-widget.js:191 [EastSide AR] Raw values - imageUrl: //cdn.shopify.com/s/files/1/0588/0568/2308/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200 size: A2 - 16.5 frame: Natural Frame frameType: standard
+shopify-ar-widget.js:191 [EastSide AR] Found 2 Yes/No option buttons
+shopify-ar-widget.js:191 [EastSide AR] Yes/No button: yes borderRed: 255 style: position: relative; background-color: rgb(255, 255, 255); outline: none; box-siz
+shopify-ar-widget.js:191 [EastSide AR] Yes/No button: no borderRed: 255 style: position: relative; background-color: rgb(255, 255, 255); outline: none; box-siz
+shopify-ar-widget.js:191 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js:191 [EastSide AR] Method 1: Found 7 selected elements (excluding tabs)
+shopify-ar-widget.js:191 [EastSide AR] Method 2: Found 53 checked inputs
+shopify-ar-widget.js:191 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js:191 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js:191 [EastSide AR] Method 5: Found 0 select elements
+shopify-ar-widget.js:191 [EastSide AR] Method 7: Found 0 upgrade/addon containers
+shopify-ar-widget.js:191 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js:191 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js:191 [EastSide AR] Method 1: Found 0 potential mount containers
+shopify-ar-widget.js:191 [EastSide AR] No mount selection detected
+shopify-ar-widget.js:191 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js:191 [EastSide AR] Size partial match: A2 - 16.5 → A2
+shopify-ar-widget.js:191 [EastSide AR] Frame mapped: Natural Frame → natural
+shopify-ar-widget.js:191 [EastSide AR] Final config: {imageUrl: '//cdn.shopify.com/s/files/1/0588/0568/2308/files/L…801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200', size: 'A2', frame: 'natural', title: 'Gourmet Deli - Leland Foster', mount: '0', …}
+shopify-ar-widget.js:191 [EastSide AR] Widget loaded
+shopify-ar-widget.js:191 [EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0588%2F0568%2F2308%2Ffiles%2FLF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg%3Fv%3D1728834900%26width%3D1200&size=A2&frame=natural&title=Gourmet+Deli+-+Leland+Foster&mount=0&frameType=standard
+shopify-ar-widget.js:191 [EastSide AR] USDZ prefetch error: TypeError: Failed to fetch
+    at storefront-modules-183921d04c4fcc1a84b4561897448f7c7d604dce.1.js:7:49264
+    at prefetchUSDZ (shopify-ar-widget.js:1079:5)
+    at shopify-ar-widget.js:1123:24

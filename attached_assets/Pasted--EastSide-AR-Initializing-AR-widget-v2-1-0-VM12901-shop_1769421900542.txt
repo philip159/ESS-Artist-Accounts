@@ -1,0 +1,33 @@
+[EastSide AR] Initializing AR widget v2.1.0
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Size mappings: 37 entries
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Frame mappings: 25 entries
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Initialized container 1
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​cdn.shopify.com/​s/​files/​1/​0588/​0568/​2308/​files/​LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200" data-size=​"A4 - 8.27" x 11.67"" data-frame=​"Natural Frame" data-title=​"Gourmet Deli - Leland Foster" data-eastside-initialized=​"true">​…​</div>​
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Container dataset: {"wavImage":"//cdn.shopify.com/s/files/1/0588/0568/2308/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200","size":"A4 - 8.27","frame":"Natural Frame","title":"Gourmet Deli - Leland Foster","eastsideInitialized":"true"}
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Raw values - imageUrl: //cdn.shopify.com/s/files/1/0588/0568/2308/files/LF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg?v=1728834900&width=1200 size: A4 - 8.27 frame: Natural Frame frameType: standard
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Found 6 option buttons
+VM12901 shopify-ar-widget.js:191 [EastSide AR] === Detecting Box Frame Selection ===
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 2: Found 65 checked inputs
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 3: Found 0 Globo option elements
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 4: Found 0 selected swatches
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 5: Found 4 select elements
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 7: Found 23 upgrade/addon containers
+VM12901 shopify-ar-widget.js:191 [EastSide AR] No box frame upgrade detected
+VM12901 shopify-ar-widget.js:191 [EastSide AR] === Detecting Mount Selection ===
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Method 1: Found 0 potential mount containers
+VM12901 shopify-ar-widget.js:191 [EastSide AR] No mount selection detected
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Globo mount detection result: false
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Size mapped: A4 - 8.27 → A4
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Frame mapped: Natural Frame → natural
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Final config: Object
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Widget loaded
+VM12901 shopify-ar-widget.js:191 [EastSide AR] Prefetching USDZ in background: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev/api/ar/model.usdz?imageUrl=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0588%2F0568%2F2308%2Ffiles%2FLF1_Large_48ca8914-86e0-4801-8075-fed4a9e37d6d.jpg%3Fv%3D1728834900%26width%3D1200&size=A4&frame=natural&title=Gourmet+Deli+-+Leland+Foster&mount=0&frameType=standard
+VM12901 shopify-ar-widget.js:191 [EastSide AR] USDZ prefetch error: TypeError: Failed to fetch
+    at storefront-modules-183921d04c4fcc1a84b4561897448f7c7d604dce.1.js:7:49264
+    at window.fetch (lb-upsell.js:1:114540)
+    at window.fetch (captain-plug-in.js:1:66707)
+    at ns.fetch (VM12816 gourmet-deli-leland-foster:26:30)
+    at Gt.window.fetch (discount-on-cart-pro.min.js?shop=east-side-studio.myshopify.com:2:18220)
+    at prefetchUSDZ (VM12901 shopify-ar-widget.js:1092:5)
+    at VM12901 shopify-ar-widget.js:1136:24

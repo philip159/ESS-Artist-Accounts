@@ -1,0 +1,1259 @@
+This is in my shopify, what is it?
+
+var GOptions;
+( () => {
+    "use strict";
+    var e, t, i = {
+        701: (e, t, i) => {
+            i.d(t, {
+                Bi: () => w,
+                LT: () => m,
+                Uc: () => r,
+                Uo: () => p,
+                WH: () => c,
+                X7: () => y,
+                ZM: () => S,
+                _G: () => u,
+                aI: () => n,
+                fQ: () => a,
+                jw: () => o,
+                lK: () => g,
+                mP: () => T,
+                mk: () => h,
+                nc: () => l,
+                of: () => d,
+                p1: () => f,
+                um: () => v,
+                yS: () => s,
+                zd: () => b
+            }),
+            HTMLElement.prototype.isText || (HTMLElement.prototype.isText = function() {
+                return "text" == this.getAttribute("data-type") || "textarea" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isNumber || (HTMLElement.prototype.isNumber = function() {
+                return "number" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isPhone || (HTMLElement.prototype.isPhone = function() {
+                return "phone" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isEmail || (HTMLElement.prototype.isEmail = function() {
+                return "email" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isDatetime || (HTMLElement.prototype.isDatetime = function() {
+                return "datetime" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isFile || (HTMLElement.prototype.isFile = function() {
+                return "file" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isColorPicker || (HTMLElement.prototype.isColorPicker = function() {
+                return "color-picker" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isTextField || (HTMLElement.prototype.isTextField = function() {
+                return this.isText() || this.isEmail() || this.isPhone() || this.isNumber()
+            }
+            ),
+            HTMLElement.prototype.isSingleInput || (HTMLElement.prototype.isSingleInput = function() {
+                return this.isTextField() || this.isDatetime() || this.isFile()
+            }
+            ),
+            HTMLElement.prototype.isRange || (HTMLElement.prototype.isRange = function() {
+                return "range" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isSelect || (HTMLElement.prototype.isSelect = function() {
+                return "select" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isSelectMultiple || (HTMLElement.prototype.isSelectMultiple = function() {
+                return "select_multiple" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isDropdown || (HTMLElement.prototype.isDropdown = function() {
+                return this.getAttribute("data-type").includes("dropdown")
+            }
+            ),
+            HTMLElement.prototype.isCheckbox || (HTMLElement.prototype.isCheckbox = function() {
+                return "checkbox" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isRadio || (HTMLElement.prototype.isRadio = function() {
+                return "radio" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isSwitch || (HTMLElement.prototype.isSwitch = function() {
+                return "switch" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isButton || (HTMLElement.prototype.isButton = function() {
+                return this.getAttribute("data-type").includes("buttons")
+            }
+            ),
+            HTMLElement.prototype.isSwatch || (HTMLElement.prototype.isSwatch = function() {
+                return this.getAttribute("data-type").includes("buttons") || this.getAttribute("data-type").includes("swatches")
+            }
+            ),
+            HTMLElement.prototype.isCheckboxes || (HTMLElement.prototype.isCheckboxes = function() {
+                return "checkbox" == this.getAttribute("data-type") || "switch" == this.getAttribute("data-type") || "buttons_multiple" == this.getAttribute("data-type") || "color-swatches_multiple" == this.getAttribute("data-type") || "image-swatches_multiple" == this.getAttribute("data-type") || "dropdown_multiple" == this.getAttribute("data-type") || "color-dropdown_multiple" == this.getAttribute("data-type") || "image-dropdown_multiple" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isRadios || (HTMLElement.prototype.isRadios = function() {
+                return "radio" == this.getAttribute("data-type") || "buttons" == this.getAttribute("data-type") || "color-swatches" == this.getAttribute("data-type") || "image-swatches" == this.getAttribute("data-type") || "dropdown" == this.getAttribute("data-type") || "color-dropdown" == this.getAttribute("data-type") || "image-dropdown" == this.getAttribute("data-type") || "google-font" == this.getAttribute("data-type")
+            }
+            ),
+            HTMLElement.prototype.isMultiple || (HTMLElement.prototype.isMultiple = function() {
+                return this.isSelectMultiple() || this.isCheckboxes() || this.isRadios()
+            }
+            ),
+            HTMLElement.prototype.isOption || (HTMLElement.prototype.isOption = function() {
+                return this.isSelect() || this.isMultiple()
+            }
+            );
+            const n = (e, t) => e.replace("{{addon}}", t)
+              , o = e => e.filter(( (e, t, i) => i.indexOf(e) === t))
+              , a = e => (e ?? "").trim().toLowerCase()
+              , r = (e, t) => {
+                var i = new CustomEvent(e,{
+                    detail: t
+                });
+                document.dispatchEvent(i)
+            }
+              , s = e => {
+                try {
+                    document.createDocumentFragment().querySelector(e)
+                } catch {
+                    return !1
+                }
+                return !0
+            }
+              , l = (e, t) => {
+                t.parentNode.insertBefore(e, t)
+            }
+              , c = (e, t) => {
+                t.parentNode.insertBefore(e, t.nextSibling)
+            }
+              , d = (e, t) => e && e != document ? e.classList.contains(t) ? e : d(e.parentNode, t) : null
+              , p = (e, t) => {
+                for (var i = e.parentElement || e.parentNode, n = null; null !== i && 1 === i.nodeType; )
+                    i.matches(t) && (n = i),
+                    i = i.parentElement || i.parentNode;
+                return n
+            }
+              , u = (e, t=null) => {
+                const i = e => {
+                    if (window.GPOConfigs?.deepQuickviewForm ?? !1) {
+                        var t = e.getBoundingClientRect()
+                          , i = Math.max(document.documentElement.clientHeight, window.innerHeight);
+                        return !(t.bottom < 0 || t.top - i >= 0)
+                    }
+                    return e.offsetWidth > 0 || e.offsetHeight > 0
+                }
+                ;
+                let n = !1;
+                if ("quickview" === t) {
+                    let t = document.querySelectorAll(e);
+                    if (t.length)
+                        if (t.length > 1) {
+                            for (let e = 0; e < t.length; e++)
+                                if (i(t[e])) {
+                                    n = t[e];
+                                    break
+                                }
+                        } else
+                            n = t[0]
+                } else
+                    for (let t = 0; t < e.length; t++) {
+                        let i = document.querySelector(e[t]);
+                        if (i) {
+                            n = i;
+                            break
+                        }
+                    }
+                return n
+            }
+              , h = e => {
+                e.setAttribute("disabled", "disabled"),
+                e.classList.add("gpo-loading")
+            }
+              , m = e => {
+                e.removeAttribute("disabled", "disabled"),
+                e.classList.remove("gpo-loading")
+            }
+              , f = (e, t) => {
+                e.classList.contains(t) ? e.classList.remove(t) : e.classList.add(t)
+            }
+              , g = (e, t, i=!1) => null !== e.getAttribute(t) ? e.getAttribute(t) : i
+              , y = (e, t) => {
+                if (!e)
+                    return "";
+                const i = GPOConfigs?.imageRatio || 1.5
+                  , n = GPOConfigs?.shop?.settings?.general?.widget?.swatch_image_format || "jpg"
+                  , o = t ? `?width=${Math.round(t * i)}` : ""
+                  , a = /\.[a-zA-Z0-9]+$/.test(e) ? e : `${e}.${n}`;
+                return `${GPOConfigs.fileUrl}${a}${o}`
+            }
+              , b = (e, t) => {
+                if (!e)
+                    return "";
+                const i = GPOConfigs.imageRatio || 1.5
+                  , n = GPOConfigs?.shop?.settings?.general?.widget?.swatch_image_format || "jpg"
+                  , o = t ? `_${Math.round(t * i)}x` : ""
+                  , a = e.match(/^(.*?)(\.[a-zA-Z0-9]+)?$/)
+                  , r = a[1]
+                  , s = a[2] || `.${n}`;
+                return `${GPOConfigs.assetUrl}${r}${o}${s}`
+            }
+              , w = e => /^#([A-Fa-f0-9]{3}|[A-Fa-f0-9]{4}|[A-Fa-f0-9]{6}|[A-Fa-f0-9]{8})$/.test(e)
+              , _ = () => {
+                let e = document.querySelector(".gpo-modal-dialog")
+                  , t = document.querySelector(".gpo-backdrop");
+                e && e.remove(),
+                t && t.remove()
+            }
+              , T = e => {
+                const t = e.target.getAttribute("data-element-id");
+                if (t) {
+                    const e = GPOConfigs.option.elements.flatMap((e => e.elements || e)).find((e => e.id == t));
+                    if (e) {
+                        let t = e?.[`text_${window.Shopify.locale}`] || e.text
+                          , i = e?.[`header_${window.Shopify.locale}`] || e.header || ""
+                          , n = document.createElement("div")
+                          , o = e.width && e.width < window.innerWidth - 100 ? `${e.width}px` : "90%";
+                        n.classList.add("gpo-modal-dialog"),
+                        n.innerHTML = `<div class="gpo-modal-dialog__modal" style="max-width:${o};">\n        <div class="gpo-modal__header">\n          <h2 class="gpo-modal__header-text">${i}</h2>\n          <span class="gpo-modal__close-button">&times;</span>\n        </div>\n        <div class="gpo-modal__body">\n          <div class="gpo-modal__content gpo-tinymce">${t}</div>\n        </div>\n      </div>`;
+                        let a = document.createElement("div");
+                        a.classList.add("gpo-backdrop"),
+                        a.addEventListener("click", _),
+                        document.body.appendChild(n),
+                        document.body.appendChild(a);
+                        let r = document.querySelector(".gpo-modal__close-button");
+                        r && r.addEventListener("click", _)
+                    }
+                }
+            }
+              , S = (e, t, i=300) => {
+                e.filter(Boolean).forEach((e => ( (e, t, i=300) => {
+                    document.querySelectorAll(e).forEach((e => {
+                        const n = "INPUT" === e.tagName || "SELECT" === e.tagName ? "change" : "click";
+                        e.addEventListener(n, ( () => setTimeout(t, i)))
+                    }
+                    ))
+                }
+                )(e, t, i)))
+            }
+              , v = (e, t=200) => {
+                let i;
+                window.addEventListener("resize", ( () => {
+                    clearTimeout(i),
+                    i = setTimeout(e, t)
+                }
+                ))
+            }
+        }
+        ,
+        836: (e, t, i) => {
+            i.d(t, {
+                $A: () => r,
+                DO: () => s,
+                Fc: () => m,
+                J7: () => g,
+                Sm: () => n,
+                U4: () => l,
+                Xl: () => c,
+                Zj: () => u,
+                iH: () => d,
+                oo: () => f,
+                up: () => a,
+                vn: () => h
+            });
+            const n = (o = document.createElement("div"),
+            function(e) {
+                return e && "string" == typeof e && (e = (e = e.replace(/<script[^>]*>([\S\s]*?)<\/script>/gim, "")).replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gim, ""),
+                o.innerHTML = e,
+                e = o.textContent,
+                o.textContent = ""),
+                e
+            }
+            );
+            var o;
+            const a = (e, t) => {
+                "string" == typeof e && (e = e.replace(".", ""));
+                var i = ""
+                  , n = /\{\{\s*(\w+)\s*\}\}/
+                  , o = t || window?.GPOConfigs?.money_format || "${{amount}}";
+                function a(e, t) {
+                    return void 0 === e ? t : e
+                }
+                function r(e, t, i, n) {
+                    if (t = a(t, 2),
+                    i = a(i, ","),
+                    n = a(n, "."),
+                    isNaN(e) || null == e)
+                        return 0;
+                    var o = (e = (e / 100).toFixed(t)).split(".");
+                    return o[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1" + i) + (o[1] ? n + o[1] : "")
+                }
+                switch (o.match(n)[1]) {
+                case "amount":
+                    i = r(e, 2);
+                    break;
+                case "amount_with_comma_separator":
+                    i = r(e, 2, ".", ",");
+                    break;
+                case "amount_with_space_separator":
+                case "amount_with_period_and_space_separator":
+                    i = r(e, 2, " ", ",");
+                    break;
+                case "amount_with_apostrophe_separator":
+                    i = r(e, 2, "'", ",");
+                    break;
+                case "amount_no_decimals":
+                    i = r(e, 0);
+                    break;
+                case "amount_no_decimals_with_comma_separator":
+                    i = r(e, 0, ".", ",");
+                    break;
+                case "amount_no_decimals_with_space_separator":
+                    i = r(e, 0, " ", "")
+                }
+                return o.replace(n, i)
+            }
+              , r = (e, t) => {
+                let i = ".";
+                switch ((t || GPOConfigs?.money_format || "${{amount}}").match(/\{\{\s*(\w+)\s*\}\}/)[1]) {
+                case "amount":
+                case "amount_no_decimals":
+                    i = ".";
+                    break;
+                case "amount_with_comma_separator":
+                case "amount_no_decimals_with_comma_separator":
+                    i = ",";
+                    break;
+                case "amount_with_space_separator":
+                case "amount_with_period_and_space_separator":
+                case "amount_no_decimals_with_space_separator":
+                    i = " ";
+                    break;
+                case "amount_with_apostrophe_separator":
+                    i = "'"
+                }
+                switch (e = ( (e, t) => {
+                    try {
+                        const i = /(\{\{\s*\w+\s*\}\})/
+                          , o = t || window?.GPOConfigs && n(window?.GPOConfigs.money_format) || "${{amount}}"
+                          , a = o.match(i)[1]
+                          , r = o.split(a);
+                        r.length && r.forEach((t => {
+                            e = e.replace(t, "")
+                        }
+                        ))
+                    } catch (e) {}
+                    return e
+                }
+                )(e),
+                e = e.replace(new RegExp(`[^0-9${i}]`,"g"), ""),
+                i) {
+                case ".":
+                    e = e.replace(/,/g, "");
+                    break;
+                case ",":
+                    e = (e = e.replace(/\./g, "")).replace(/,/g, ".");
+                    break;
+                case " ":
+                    e = e.replace(/\s/g, "")
+                }
+                return 100 * parseFloat(e)
+            }
+              , s = (e, t) => {
+                let i = !0
+                  , n = "";
+                const o = GPOConfigs?.addonVariants || []
+                  , a = GPOConfigs?.translations?.addtocart?.items_are_no_longer_available || "Some items are no longer available. Please try again later."
+                  , r = window?.gpoCustomInventoryMsg || "Some items are no longer available. Please try again later.";
+                if (o.length) {
+                    const o = Object.values(e.items.reduce(( (e, {id: t, ...i}) => (e[t] || (e[t] = {
+                        quantity: 0
+                    }),
+                    e[t] = {
+                        id: t,
+                        ...e[t],
+                        quantity: e[t].quantity + i.quantity
+                    },
+                    e)), {}));
+                    for (let e = 0; e < o.length; e++) {
+                        const s = o[e]
+                          , l = GPOConfigs.addonVariants.find((e => e.id == s.id));
+                        if (!l)
+                            continue;
+                        const {available: c, inventory_management: d, inventory_policy: p, inventory_quantity: u, product_title: h} = l;
+                        if (!1 === c) {
+                            i = !1,
+                            n = a;
+                            break
+                        }
+                        if ("shopify" == d && "deny" == p) {
+                            let e = s.quantity;
+                            if (Array.isArray(t)) {
+                                const i = t.find((e => e.id === s.id));
+                                i && (e += i.quantity)
+                            }
+                            if (e > u) {
+                                i = !1,
+                                n = r.replace("inventory_quantity", u).replace("product_title", h);
+                                break
+                            }
+                        }
+                    }
+                }
+                return {
+                    valid: i,
+                    msg: n
+                }
+            }
+              , l = (e, t, i) => {
+                fetch("/cart/add.js", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(e)
+                }).then((e => e.json())).then((e => {
+                    i(t, e)
+                }
+                )).catch((e => {
+                    console.error("Error:", e)
+                }
+                ))
+            }
+              , c = async () => fetch(`${GPOConfigs.shopifyRoot}cart.json`).then((e => e.json())).then((e => e))
+              , d = (e, t) => {
+                fetch("/cart/update.js", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(e)
+                }).then((e => e.json())).then((e => {
+                    e && t()
+                }
+                )).catch((e => {
+                    console.error("Error:", e)
+                }
+                ))
+            }
+              , p = async e => {
+                await fetch("/cart/change.js", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(e)
+                }).then((e => e.json())).then((e => e)).catch((e => {
+                    console.error("Error:", e)
+                }
+                ))
+            }
+              , u = async (e, t) => {
+                for (let t = 0; t < e.length; t++) {
+                    const i = e[t];
+                    await p(i)
+                }
+                t()
+            }
+              , h = e => new Promise(( (t, i) => {
+                t(fetch(`${GPOConfigs.shopifyRoot}search?view=gpo&q=handles:${e.join("|")}`).then((e => e.json())).then((e => e)))
+            }
+            ))
+              , m = async (e, t="new-products") => fetch(`${GPOConfigs.shopifyRoot}apps/options/${t}?handles=${e.join(",")}`).then((e => e.json())).then((e => e))
+              , f = e => new Promise(( (t, i) => {
+                t(fetch(`${GPOConfigs.shopifyRoot}products/${e}.js`).then((e => 200 == e.status ? e.json() : null)).then((e => e)))
+            }
+            ))
+              , g = e => {
+                let t = [];
+                for (let i = 0; i < e.length; i++) {
+                    const n = e[i].variants;
+                    for (let o = 0; o < n.length; o++)
+                        t.push({
+                            id: n[o].id,
+                            product_title: e[i].title,
+                            title: n[o].title,
+                            price: n[o].price,
+                            available: e[i].available
+                        })
+                }
+                return t = t.filter((e => e)),
+                t
+            }
+        }
+        ,
+        9484: (e, t, i) => {
+            i.d(t, {
+                Dj: () => b,
+                IW: () => m,
+                M7: () => d,
+                Nh: () => T,
+                Nv: () => g,
+                S5: () => v,
+                Tr: () => S,
+                aX: () => h,
+                b9: () => f,
+                h2: () => p,
+                kS: () => c,
+                ru: () => l,
+                rv: () => w,
+                ug: () => _,
+                vU: () => y
+            });
+            var n = i(701)
+              , o = i(836);
+            const a = (e, t) => {
+                if (!t)
+                    return !1;
+                if (t.all.enable)
+                    return !0;
+                if (t.manual.enable && e) {
+                    let i = t.manual.ids.map(String)
+                      , n = e.id.toString();
+                    return i.includes(n)
+                }
+                return !(!t.automate.enable || !e) && t.automate.conditions.reduce(( (i, n) => {
+                    let o = ""
+                      , a = !1
+                      , r = !1
+                      , s = n.value;
+                    switch (["TITLE", "TYPE", "VENDOR", "TAG"].includes(n.select) ? s = n.value ? n.value.toLowerCase().trim() : n.value : "VARIANT_PRICE" == n.select && (s = 100 * parseFloat(n.value)),
+                    n.select) {
+                    case "TITLE":
+                        o = "product_title",
+                        a = e.title.toLowerCase().trim();
+                        break;
+                    case "TYPE":
+                        o = "product_type",
+                        a = e.type.toLowerCase().trim();
+                        break;
+                    case "VENDOR":
+                        o = "vendor",
+                        a = e.vendor.toLowerCase().trim();
+                        break;
+                    case "VARIANT_PRICE":
+                        o = "price",
+                        a = e.price;
+                        break;
+                    case "TAG":
+                        o = "tags",
+                        a = e.tags.map((e => e.toLowerCase().trim()));
+                        break;
+                    case "COLLECTION":
+                        o = "collection",
+                        a = e.collections
+                    }
+                    switch (n.where) {
+                    case "EQUALS":
+                        r = "tags" == o || "collection" == o ? a.includes(s) : "price" == o ? a == s : a === s;
+                        break;
+                    case "NOT_EQUALS":
+                        r = "tags" == o || "collection" == o ? !a.includes(s) : "price" == o ? a != s : a !== s;
+                        break;
+                    case "STARTS_WITH":
+                        r = a.startsWith(s);
+                        break;
+                    case "ENDS_WITH":
+                        r = a.endsWith(s);
+                        break;
+                    case "GREATER_THAN":
+                        r = a > s;
+                        break;
+                    case "LESS_THAN":
+                        r = a < s;
+                        break;
+                    case "CONTAINS":
+                        r = a.includes(s);
+                        break;
+                    case "NOT_CONTAINS":
+                        r = !a.includes(s)
+                    }
+                    return i = "and" == t.automate.operator ? null === i ? r : i * r : null === i ? r : i || r
+                }
+                ), null)
+            }
+              , r = (e, t) => {
+                if (!t)
+                    return !0;
+                if (t.all.enable)
+                    return !0;
+                if (t.manual.enable && e) {
+                    let i = t.manual.ids.map(String)
+                      , n = e.id.toString();
+                    return i.includes(n)
+                }
+                return !!t.automate.enable && t.automate.conditions.reduce(( (i, n) => {
+                    let o = ""
+                      , a = !1
+                      , r = !1;
+                    if ("LOGGED_IN" == n.select)
+                        r = !!e;
+                    else if ("GUEST" == n.select)
+                        r = !e;
+                    else if (e) {
+                        switch (n.select) {
+                        case "NAME":
+                            o = "name",
+                            a = e?.name.toLowerCase().trim();
+                            break;
+                        case "EMAIL":
+                            o = "email",
+                            a = e?.email.toLowerCase().trim();
+                            break;
+                        case "TAG":
+                            o = "tags",
+                            a = e?.tags.map((e => e.toLowerCase().trim()));
+                            break;
+                        case "COLLECTION":
+                            o = "collection",
+                            a = e?.collections
+                        }
+                        let t = n.value ? n.value.toLowerCase().trim() : n.value;
+                        switch (n.where) {
+                        case "EQUALS":
+                            r = "tags" == o ? a.includes(t) : a === t;
+                            break;
+                        case "NOT_EQUALS":
+                            r = "tags" == o ? !a.includes(t) : a !== t;
+                            break;
+                        case "STARTS_WITH":
+                            r = a.startsWith(t);
+                            break;
+                        case "ENDS_WITH":
+                            r = a.endsWith(t);
+                            break;
+                        case "CONTAINS":
+                            r = a.includes(t);
+                            break;
+                        case "NOT_CONTAINS":
+                            r = !a.includes(t)
+                        }
+                    }
+                    return i = "and" == t.automate.operator ? null === i ? r : i * r : null === i ? r : i || r
+                }
+                ), null)
+            }
+              , s = e => !e || (!(!e.hasOwnProperty("enable") || e.enable) || (!!(e.hasOwnProperty("type") && e.hasOwnProperty("countries") && ("include" == e.type && e.countries.includes(window.GPOConfigs.curCountryCode) || "exclude" == e.type && !e.countries.includes(window.GPOConfigs.curCountryCode))) || void 0))
+              , l = (e, t) => {
+                if (t && t.length) {
+                    let i = Object.keys(t);
+                    for (let n = i.length - 1; n >= 0; n--) {
+                        const o = t[i[n]];
+                        if (o) {
+                            if (!o.status) {
+                                if (a(e, o?.products?.rule || !1))
+                                    return o
+                            }
+                        }
+                    }
+                }
+                return !1
+            }
+              , c = (e, t, i) => {
+                let n = "all";
+                if (GPOConfigs?.optionIds && (n = "" == GPOConfigs.optionIds ? "all" : "empty" == GPOConfigs.optionIds ? [] : GPOConfigs.optionIds.split(",")),
+                i && i.length) {
+                    let o = Object.keys(i);
+                    for (let l = o.length - 1; l >= 0; l--) {
+                        const c = o[l]
+                          , d = i[o[l]];
+                        if (d) {
+                            const i = "all" == n || n?.includes(o[l])
+                              , p = !d.status
+                              , u = d.published_scope?.includes("web") ?? !0;
+                            if (i && p && u) {
+                                const i = d?.products?.rule || !1
+                                  , n = d?.customers?.rule || !1
+                                  , o = !!(d.hasOwnProperty("countries") && d.countries.hasOwnProperty("enable") && d.countries.enable) && d.countries
+                                  , l = a(e, i)
+                                  , p = r(t, n)
+                                  , u = s(o);
+                                if (l && p && u)
+                                    return {
+                                        id: c,
+                                        option: d
+                                    }
+                            }
+                        }
+                    }
+                }
+                return !1
+            }
+              , d = (e, t) => {
+                if (!e.items || 0 == e.items.length)
+                    return !1;
+                for (let i = 0; i < e.items.length; i++)
+                    if (e.items[i].properties) {
+                        let n = e.items[i].properties;
+                        for (let e = 0; e < Object.keys(n).length; e++) {
+                            let i = Object.keys(n)[e];
+                            if (n[i] = (0,
+                            o.Sm)(n[i]),
+                            ("string" == typeof n[i] && n[i].split(t.price.seperator)).length > 1)
+                                return t.price.hide_additional_payment_button && document.body.setAttribute("data-gpo-cart-hide-additional-payment-button", t.price.hide_additional_payment_button),
+                                !0
+                        }
+                    }
+                return !1
+            }
+              , p = e => {
+                e.classList.remove("has-error"),
+                e.classList.remove("has-success"),
+                e.querySelectorAll(".help-block.error").forEach((e => {
+                    e.parentNode.removeChild(e)
+                }
+                ))
+            }
+              , u = (e, t) => {
+                var i = document.createElement("p");
+                i.classList.add("help-block"),
+                i.classList.add("error"),
+                i.innerText = t,
+                e.appendChild(i)
+            }
+              , h = (e, t) => {
+                let i = (0,
+                n.of)(e, "gpo-form__group");
+                if (null == i)
+                    return;
+                let o = i.querySelector(".messages");
+                p(i),
+                t ? (i.classList.add("has-error"),
+                1 == t.length ? u(o, t[0]) : u(o, t[t.length - 1])) : i.classList.add("has-success")
+            }
+              , m = () => {
+                let e = window.txtValidationVariantGloboColorSwatch ?? "This field is required";
+                document.querySelectorAll(".errorOptions").forEach((t => {
+                    t.innerText = e,
+                    t.style.display = "block"
+                }
+                ))
+            }
+              , f = () => {
+                document.querySelectorAll(".errorOptions").forEach((e => {
+                    e.innerText = "",
+                    e.style.display = "none"
+                }
+                ))
+            }
+              , g = (e, t) => {
+                let i = !1
+                  , o = document.querySelectorAll(e);
+                o && o.forEach((e => {
+                    let o = (0,
+                    n.of)(e, "gpo-form__group")
+                      , a = e.getAttribute("data-name");
+                    if (e.classList.contains("flatpickr-mobile") && !a) {
+                        a = o.querySelector('input[type="hidden"].flatpickr-input').getAttribute("data-name")
+                    }
+                    i || void 0 === t[a] || (i = (0,
+                    n.of)(e, "gpo-form__group")),
+                    h(e, t && t[a])
+                }
+                )),
+                i && GPOConfigs.shop.settings.general.product_page.scroll_to_invalid && i.scrollIntoView({
+                    behavior: "smooth"
+                })
+            }
+              , y = (e, t=!1) => e.isTextField() ? ["input"] : e.isDatetime() ? ["input", "change"] : e.isFile() ? t ? ["drop", "change", "gpoFakeChange"] : ["drop", "change"] : ["change"]
+              , b = (e, t) => {
+                document.querySelectorAll(`.gpo-app [data-type="${e}"]`).forEach(t)
+            }
+              , w = e => (e.getAttribute("original-value") || e.value).trim().toLowerCase()
+              , _ = (e, t) => {
+                const i = e.querySelector(t);
+                if (!i)
+                    return;
+                const n = document.createElement("SPAN");
+                n.setAttribute("class", "oos"),
+                n.innerHTML = "(Sold out)",
+                i.append(n)
+            }
+              , T = e => ["heading", "divider", "modal", "paragraph", "html", "tabs", "spacing", "group"].includes(e)
+              , S = e => e.flatMap(( ({elements: e=[], id: t, ...i}) => [{
+                ...i,
+                id: t
+            }, ...e.map((e => ({
+                ...e,
+                group_id: t
+            })))]))
+              , v = e => e.filter((e => e.personalize && !e?.hidden))
+        }
+    }, n = {};
+    function o(e) {
+        var t = n[e];
+        if (void 0 !== t)
+            return t.exports;
+        var a = n[e] = {
+            id: e,
+            loaded: !1,
+            exports: {}
+        };
+        return i[e].call(a.exports, a, a.exports, o),
+        a.loaded = !0,
+        a.exports
+    }
+    o.m = i,
+    o.amdD = function() {
+        throw new Error("define cannot be used indirect")
+    }
+    ,
+    o.n = e => {
+        var t = e && e.__esModule ? () => e.default : () => e;
+        return o.d(t, {
+            a: t
+        }),
+        t
+    }
+    ,
+    o.d = (e, t) => {
+        for (var i in t)
+            o.o(t, i) && !o.o(e, i) && Object.defineProperty(e, i, {
+                enumerable: !0,
+                get: t[i]
+            })
+    }
+    ,
+    o.f = {},
+    o.e = e => Promise.all(Object.keys(o.f).reduce(( (t, i) => (o.f[i](e, t),
+    t)), [])),
+    o.u = e => "bundle." + ({
+        40: "main_v1",
+        58: "ajax-cart-vanilla",
+        142: "konva",
+        249: "flatpickr",
+        360: "swiper",
+        399: "quickview",
+        421: "intlTel",
+        425: "themes",
+        463: "ajax-cart-jquery",
+        758: "vanillaPicker",
+        792: "main",
+        949: "cart",
+        979: "cart_v1"
+    }[e] || e) + "." + {
+        34: "915df29a635d69d71938",
+        40: "443f7d8b5e5e5c1fcd84",
+        58: "de610c1acfbbfc61a1f5",
+        142: "094d2bad0894ffb722c8",
+        156: "034e379813e95a52e144",
+        206: "ddf310c9ec15631f7d9f",
+        249: "dceb160a3d6b462b8798",
+        360: "32485ff5d0c2e40b5c6e",
+        399: "43dd3567ced12f2416df",
+        421: "93cce74b347491ec75bd",
+        425: "92e9d3ce14847998bbcb",
+        463: "ed6698341c81185c0a38",
+        573: "d474d363485c6dae44fb",
+        682: "50fe54cf44d954971f37",
+        758: "aa776a4f0df6605e9ff9",
+        778: "dd2713b3978336fe52a2",
+        792: "fedbfd38f62aa7517734",
+        832: "3fc125a940f974cd5d26",
+        949: "f4ab469c2960281a6474",
+        967: "bff972fce5fa8c3748e9",
+        979: "ced77dd89d4a7e02b686",
+        986: "110eefc6395623283f54"
+    }[e] + ".js",
+    o.g = function() {
+        if ("object" == typeof globalThis)
+            return globalThis;
+        try {
+            return this || new Function("return this")()
+        } catch (e) {
+            if ("object" == typeof window)
+                return window
+        }
+    }(),
+    o.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t),
+    e = {},
+    t = "GOptions:",
+    o.l = (i, n, a, r) => {
+        if (e[i])
+            e[i].push(n);
+        else {
+            var s, l;
+            if (void 0 !== a)
+                for (var c = document.getElementsByTagName("script"), d = 0; d < c.length; d++) {
+                    var p = c[d];
+                    if (p.getAttribute("src") == i || p.getAttribute("data-webpack") == t + a) {
+                        s = p;
+                        break
+                    }
+                }
+            s || (l = !0,
+            (s = document.createElement("script")).charset = "utf-8",
+            s.timeout = 120,
+            o.nc && s.setAttribute("nonce", o.nc),
+            s.setAttribute("data-webpack", t + a),
+            s.src = i),
+            e[i] = [n];
+            var u = (t, n) => {
+                s.onerror = s.onload = null,
+                clearTimeout(h);
+                var o = e[i];
+                if (delete e[i],
+                s.parentNode && s.parentNode.removeChild(s),
+                o && o.forEach((e => e(n))),
+                t)
+                    return t(n)
+            }
+              , h = setTimeout(u.bind(null, void 0, {
+                type: "timeout",
+                target: s
+            }), 12e4);
+            s.onerror = u.bind(null, s.onerror),
+            s.onload = u.bind(null, s.onload),
+            l && document.head.appendChild(s)
+        }
+    }
+    ,
+    o.r = e => {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+            value: "Module"
+        }),
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        })
+    }
+    ,
+    o.nmd = e => (e.paths = [],
+    e.children || (e.children = []),
+    e),
+    ( () => {
+        var e;
+        o.g.importScripts && (e = o.g.location + "");
+        var t = o.g.document;
+        if (!e && t && (t.currentScript && "SCRIPT" === t.currentScript.tagName.toUpperCase() && (e = t.currentScript.src),
+        !e)) {
+            var i = t.getElementsByTagName("script");
+            if (i.length)
+                for (var n = i.length - 1; n > -1 && (!e || !/^http(s?):/.test(e)); )
+                    e = i[n--].src
+        }
+        if (!e)
+            throw new Error("Automatic publicPath is not supported in this browser");
+        e = e.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"),
+        o.p = e
+    }
+    )(),
+    ( () => {
+        var e = {
+            914: 0
+        };
+        o.f.j = (t, i) => {
+            var n = o.o(e, t) ? e[t] : void 0;
+            if (0 !== n)
+                if (n)
+                    i.push(n[2]);
+                else {
+                    var a = new Promise(( (i, o) => n = e[t] = [i, o]));
+                    i.push(n[2] = a);
+                    var r = o.p + o.u(t)
+                      , s = new Error;
+                    o.l(r, (i => {
+                        if (o.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0),
+                        n)) {
+                            var a = i && ("load" === i.type ? "missing" : i.type)
+                              , r = i && i.target && i.target.src;
+                            s.message = "Loading chunk " + t + " failed.\n(" + a + ": " + r + ")",
+                            s.name = "ChunkLoadError",
+                            s.type = a,
+                            s.request = r,
+                            n[1](s)
+                        }
+                    }
+                    ), "chunk-" + t, t)
+                }
+        }
+        ;
+        var t = (t, i) => {
+            var n, a, [r,s,l] = i, c = 0;
+            if (r.some((t => 0 !== e[t]))) {
+                for (n in s)
+                    o.o(s, n) && (o.m[n] = s[n]);
+                if (l)
+                    l(o)
+            }
+            for (t && t(i); c < r.length; c++)
+                a = r[c],
+                o.o(e, a) && e[a] && e[a][0](),
+                e[a] = 0
+        }
+          , i = self.webpackChunkGOptions = self.webpackChunkGOptions || [];
+        i.forEach(t.bind(null, 0)),
+        i.push = t.bind(null, i.push.bind(i))
+    }
+    )(),
+    o.nc = void 0;
+    var a = o(9484)
+      , r = o(701);
+    const s = new Set(["PT_BR", "PT_PT", "ZH_CN", "ZH_TW"])
+      , l = new Set(["AF", "AK", "AM", "AR", "AS", "AZ", "BE", "BG", "BM", "BN", "BO", "BR", "BS", "CA", "CE", "CKB", "CS", "CU", "CY", "DA", "DE", "DZ", "EE", "EL", "EN", "EO", "ES", "ET", "EU", "FA", "FF", "FI", "FIL", "FO", "FR", "FY", "GA", "GD", "GL", "GU", "GV", "HA", "HE", "HI", "HR", "HU", "HY", "IA", "ID", "IG", "II", "IS", "IT", "JA", "JV", "KA", "KI", "KK", "KL", "KM", "KN", "KO", "KS", "KU", "KW", "KY", "LA", "LB", "LG", "LN", "LO", "LT", "LU", "LV", "MG", "MI", "MK", "ML", "MN", "MO", "MR", "MS", "MT", "MY", "NB", "ND", "NE", "NL", "NN", "NO", "OM", "OR", "OS", "PA", "PL", "PS", "PT", "QU", "RM", "RN", "RO", "RU", "RW", "SA", "SC", "SD", "SE", "SG", "SH", "SI", "SK", "SL", "SN", "SO", "SQ", "SR", "SU", "SV", "SW", "TA", "TE", "TG", "TH", "TI", "TK", "TL", "TN", "TO", "TR", "TT", "UG", "UK", "UR", "UZ", "VI", "VO", "WO", "XH", "YI", "YO", "ZH", "ZU"])
+      , c = e => {
+        const t = e || window?.Shopify?.locale;
+        if (!t)
+            return "EN";
+        const i = t.trim().toUpperCase().replace("-", "_");
+        if (s.has(i))
+            return i;
+        const n = i.split("_")[0];
+        return l.has(n) ? n : "EN"
+    }
+      , d = async (e, t, i, n=null) => {
+        if (!i || !e || !t)
+            return null;
+        const o = `https://${e}/api/2025-07/graphql.json`
+          , a = async (e, r=[]) => {
+            const s = await (async e => {
+                const a = `\n      query getProduct($id: ID!, $country: CountryCode!, $language: LanguageCode!) @inContext(country: $country, language: $language) {\n        product(id: $id) {\n          variants(first: 250 ${e ? `, after: "${e}"` : ""}) {\n            pageInfo {\n              hasNextPage\n              endCursor\n            }\n            edges {\n              node {\n                id\n                title\n                availableForSale\n                currentlyNotInStock\n                quantityAvailable\n                price {\n                  amount\n                  currencyCode\n                }\n                compareAtPrice {\n                  amount\n                  currencyCode\n                }\n                selectedOptions {\n                  name\n                  value\n                }\n              }\n            }\n          }\n        }\n      }\n    `
+                  , r = {
+                    id: `gid://shopify/Product/${t}`,
+                    country: window?.Shopify?.country || "US",
+                    language: c(n)
+                }
+                  , s = await fetch(o, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Shopify-Storefront-Access-Token": i
+                    },
+                    body: JSON.stringify({
+                        query: a,
+                        variables: r
+                    })
+                });
+                if (!s.ok)
+                    throw new Error(`Storefront API error: ${s.status}`);
+                const l = await s.json();
+                return l.errors ? null : l.data?.product?.variants || null
+            }
+            )(e);
+            if (!s)
+                return r;
+            const l = s.edges.map(( ({node: e}) => ({
+                id: parseInt(e.id.split("/").pop()),
+                title: e.title,
+                available: e.availableForSale,
+                price: 100 * Number(e.price.amount),
+                compare_at_price: e.compareAtPrice ? 100 * Number(e.compareAtPrice.amount) : null,
+                inventory_management: "shopify",
+                inventory_policy: e.currentlyNotInStock ? "continue" : "deny",
+                inventory_quantity: e.quantityAvailable ?? 0,
+                option1: e.selectedOptions[0]?.value ?? null,
+                option2: e.selectedOptions[1]?.value ?? null,
+                option3: e.selectedOptions[2]?.value ?? null,
+                options: e.selectedOptions.map((e => e.value))
+            })));
+            const d = [...r, ...l];
+            return s.pageInfo.hasNextPage ? a(s.pageInfo.endCursor, d) : d
+        }
+        ;
+        try {
+            return await a(null)
+        } catch (e) {
+            return console.error("Error fetching variants:", e),
+            null
+        }
+    }
+    ;
+    if (window.GPOConfigs = window.GPOConfigs || {},
+    o.p = window.GPOConfigs.embedAssetUrl || "auto",
+    GPOConfigs = {
+        discountWhenCart: null,
+        initialize: async function() {
+            this.themeInfo.theme_store_id && document.body.setAttribute("data-gpo-theme-store-id", this.themeInfo.theme_store_id),
+            this.form = (0,
+            r._G)(this.theme.product.form),
+            1 == this.shop?.version ? this.initV1() : this.initV2()
+        },
+        initV1: async function() {
+            const {default: e} = await Promise.all([o.e(967), o.e(979)]).then(o.bind(o, 1598));
+            switch (Object.assign(this, e),
+            this.page.type) {
+            case "product":
+                this.loadMainScriptsV1(this.product, this.form);
+                break;
+            case "index":
+            case "page":
+            case "blog":
+                this.loadMainScriptsV1(this.featuredProduct, this.form);
+                break;
+            case "cart":
+                (0,
+                a.M7)(this.cart, this.shop.settings) && this.handleCartPage()
+            }
+            this.handleCartDrawer()
+        },
+        loadMainScriptsV1: async function(e, t=!1) {
+            let i = (0,
+            a.ru)(e, this.options);
+            if ((t = t || this.form) && i) {
+                i.flatElements = (0,
+                a.Tr)(i.elements);
+                const {default: e} = await Promise.all([o.e(573), o.e(682), o.e(34), o.e(832), o.e(40)]).then(o.bind(o, 5348));
+                Object.assign(this, e),
+                this.renderOptions(t, i),
+                this.handleCLO(t, i),
+                this.handleSwatches(t, i),
+                this.handleDateTimePicker(t),
+                this.handleCheckboxes(t),
+                this.handleAddOns(t),
+                this.handleVariantActivator(t),
+                this.handleValidate(t, i),
+                this.handleUnsupportedAjaxOptions(t),
+                document.body.setAttribute("data-gpo-is-enabled", !0)
+            }
+            (0,
+            r.Uc)("gpoRenderCompleted", {
+                form: t,
+                product: e
+            })
+        },
+        initV2: function() {
+            let e = this.shop.settings.general.others_page;
+            switch (this.translations = this.shop?.translations?.[window?.Shopify?.locale] || this.shop?.translations?.default || this.shop.settings.translation,
+            this.page.type) {
+            case "product":
+                this.loadMainScripts(this.product, this.customer, this.form),
+                this.loadThemeHelperScripts();
+                break;
+            case "index":
+                void 0 !== e ? void 0 !== e.show_on_homepage && e.show_on_homepage && this.loadMainScripts(this.featuredProduct, this.customer, this.form) : this.loadMainScripts(this.featuredProduct, this.customer, this.form),
+                this.loadThemeHelperScripts(),
+                this.loadQuickViewScripts();
+                break;
+            case "cart":
+                this.loadCartScripts(),
+                this.loadQuickViewScripts();
+                break;
+            case "page":
+            case "blog":
+                e?.show_on_page && this.loadMainScripts(this.featuredProduct, this.customer, this.form),
+                this.loadThemeHelperScripts(),
+                this.loadQuickViewScripts();
+                break;
+            default:
+                this.loadQuickViewScripts()
+            }
+        },
+        loadMainScripts: async function(e, t, i, n=!1, s={}) {
+            if (i && e && e.id) {
+                await (async e => {
+                    if (250 === e?.variants?.length) {
+                        const t = window.GPOConfigs.storefrontToken;
+                        if (!t)
+                            return;
+                        const i = window.Shopify?.shop || window.location.hostname.replace(/^www\./, "")
+                          , n = await d(i, e.id, t, null);
+                        Array.isArray(n) && n.length && (e.variants = n)
+                    }
+                }
+                )(e);
+                let r = (0,
+                a.kS)(e, t, this.options);
+                if (r && r.option) {
+                    this.option = r.option;
+                    const e = (0,
+                    a.Tr)(r.option.elements);
+                    r.option.flatElements = e;
+                    const {default: t} = await Promise.all([o.e(573), o.e(34), o.e(832), o.e(792)]).then(o.bind(o, 5536));
+                    Object.assign(this, t),
+                    await this.renderOptions(i, r.option, r.id, n, s),
+                    this.handleCLO(e, n, s),
+                    await this.handlePersonalize(e, n),
+                    this.handleRedirectLinks(e),
+                    this.handleSwatches(e),
+                    this.handleSwatchTooltip(),
+                    this.handleToggleOptionValues(e),
+                    this.handleOos(e),
+                    this.handleTabs(),
+                    this.handleFancyDropdown(e),
+                    this.handleDateTimePicker(),
+                    this.handlePhoneInputs(),
+                    this.handleFileInputs(e, i),
+                    this.handleColorPickers(e),
+                    this.handleRangeSlider(),
+                    this.handleModal(e),
+                    this.handleGroup(e),
+                    this.handleAllElements(),
+                    this.handleOptionQuantity(),
+                    this.handleOptionValueQuantity(e),
+                    this.handleValidate(e, i, n, s),
+                    this.handleVariantActivator(e, n, s),
+                    this.handleAddonLabel(),
+                    this.listenProductImageSwapEvent(),
+                    this.handleShowSlider(),
+                    document.body.setAttribute("data-gpo-is-enabled", !0)
+                } else {
+                    let e = i.querySelector(".gpo-hidden-inputs");
+                    e && e.remove();
+                    let t = document.querySelector(".gpo-container");
+                    t && t.remove()
+                }
+            }
+            (0,
+            r.Uc)("gpoRenderCompleted", {
+                form: i,
+                product: e
+            })
+        },
+        loadCartScripts: async function() {
+            const e = this.shop?.settings?.general?.cart_page?.disable_quantity_and_remove ?? !1
+              , t = this.shop?.settings?.general?.cart_page?.edit_options ?? !1;
+            if (e || t) {
+                const {default: e} = await Promise.all([o.e(573), o.e(949)]).then(o.bind(o, 2403));
+                Object.assign(this, e),
+                this.initCartPage()
+            }
+        },
+        loadQuickViewScripts: async function() {
+            const e = this.shop?.settings?.general?.collection_page?.show_on_quickview;
+            if (e) {
+                const {default: e} = await o.e(399).then(o.bind(o, 6889));
+                Object.assign(this, e),
+                this.initQuickView(),
+                window.addEventListener("globoFilterRenderCompleted", ( () => this.initQuickView()))
+            }
+        },
+        loadThemeHelperScripts: async function() {
+            const {default: e} = await o.e(425).then(o.bind(o, 5961));
+            Object.assign(this, e),
+            this.initThemeHelper()
+        },
+        ...GPOConfigs
+    },
+    GPOConfigs?.shop) {
+        const e = GPOConfigs.appEmbed || document.head?.innerHTML.includes("globo.options.init.js")
+          , t = GPOConfigs?.hideConsoleBanner ?? !1;
+        e && (GPOConfigs.initialize(),
+        t || function() {
+            const e = "Globo Product Options"
+              , t = ["display: inline-block", "font-size: 14px", "font-weight: 700", "background-image: linear-gradient(90deg, #FF4081, #74243f 60%)", "color: #fff", "padding: 6px 10px", "border-radius: 4px"].join(";")
+              , i = ["", "🧩 Unlimited product options — enable product personalization with live preview.", "⚙️ Easy to use, no coding required, fully compatible with all Shopify themes.", "🏆 Trusted by 50,000+ Shopify merchants worldwide.", "⭐ Over 3,300 positive reviews and growing!", "", "🔗 Learn more at:", `https://apps.shopify.com/product-options-pro?${new URLSearchParams({
+                utm_source: "storefront-console",
+                utm_medium: "attribution",
+                utm_campaign: "option-banner",
+                utm_content: "learn-more",
+                utm_term: location.hostname
+            }).toString()}`]
+              , n = ["font-size:13px", "line-height: 1.5"].join(";");
+            console.group(`%c${e}`, t),
+            console.log(`%c${i.join("\n")}`, n),
+            console.groupEnd()
+        }())
+    }
+    GOptions = {}
+}
+)();

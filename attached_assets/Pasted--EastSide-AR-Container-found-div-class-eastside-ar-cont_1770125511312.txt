@@ -1,0 +1,612 @@
+[EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Natural Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Natural Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Natural Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676139897
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Natural Frame → natural
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'natural', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget loaded
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Natural Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Natural Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Natural Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676139897
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Natural Frame → natural
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'natural', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget visible: Frame selected: natural Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=natural&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Addon changed: Natural Box Frame | Checked: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Natural Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Natural Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Natural Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676139897
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 1 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon: checking addon name: natural box frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] BOX FRAME DETECTED via ESS addon widget: natural box frame
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: DETECTED
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Box frame upgrade applied: frameType=box, using selected frame color: Natural Frame
+VM3355 shopify-ar-widget.js:1334 [EastSide AR] BOX FRAME APPLIED - Frame type changed to "box", color: Natural Frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Natural Frame → natural
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'natural', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Updated config after addon change - frameType: box
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=natural&title=121_AR&mount=0&frameType=box&scaleByWidth=1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 1 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget visible: Frame selected: black Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget visible: Frame selected: black Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget visible: Frame selected: black Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Variant changed - updating visibility and prefetching new config
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Widget visible: Frame selected: black Image: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re...
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Initializing AR widget v3.5.0
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mappings: 89 entries
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mappings: 29 entries
+shopify-ar-widget.js?v=10:550 [EastSide AR] Watching product form for variant changes
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js?v=10:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js?v=10:550 [EastSide AR] Looking for variant ID: 56555676074361
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 2: Found 64 checked inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 5: Found 2 select elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js?v=10:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 1 potential mount containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No mount selection detected
+shopify-ar-widget.js?v=10:550 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mapped: Black Frame → black
+shopify-ar-widget.js?v=10:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Widget loaded
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+shopify-ar-widget.js?v=10:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Addon changed: Black Box Frame | Checked: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Addon changed: Black Box Frame | Checked: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 1 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon: checking addon name: black box frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] BOX FRAME DETECTED via ESS addon widget: black box frame
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: DETECTED
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Box frame upgrade applied: frameType=box, using selected frame color: Black Frame
+VM3355 shopify-ar-widget.js:1334 [EastSide AR] BOX FRAME APPLIED - Frame type changed to "box", color: Black Frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Updated config after addon change - frameType: box
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=box&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js?v=10:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js?v=10:550 [EastSide AR] Looking for variant ID: 56555676074361
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 1 selected addons
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon: checking addon name: black box frame
+shopify-ar-widget.js?v=10:550 [EastSide AR] BOX FRAME DETECTED via ESS addon widget: black box frame
+shopify-ar-widget.js?v=10:1328 [EastSide AR] BOX FRAME CHECK: DETECTED
+shopify-ar-widget.js?v=10:550 [EastSide AR] Box frame upgrade applied: frameType=box, using selected frame color: Black Frame
+shopify-ar-widget.js?v=10:1334 [EastSide AR] BOX FRAME APPLIED - Frame type changed to "box", color: Black Frame
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 1 potential mount containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No mount selection detected
+shopify-ar-widget.js?v=10:550 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mapped: Black Frame → black
+shopify-ar-widget.js?v=10:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Updated config after addon change - frameType: box
+shopify-ar-widget.js?v=10:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=box&scaleByWidth=1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+shopify-ar-widget.js?v=10:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Addon changed: Black Box Frame | Checked: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Addon changed: Black Box Frame | Checked: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Updated config after addon change - frameType: standard
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js?v=10:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js?v=10:550 [EastSide AR] Looking for variant ID: 56555676074361
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 2: Found 64 checked inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 5: Found 2 select elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js?v=10:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 1 potential mount containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No mount selection detected
+shopify-ar-widget.js?v=10:550 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mapped: Black Frame → black
+shopify-ar-widget.js?v=10:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Updated config after addon change - frameType: standard
+shopify-ar-widget.js?v=10:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+shopify-ar-widget.js?v=10:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Addon changed: Black Box Frame | Checked: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Addon changed: Black Box Frame | Checked: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 1 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon: checking addon name: black box frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] BOX FRAME DETECTED via ESS addon widget: black box frame
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: DETECTED
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Box frame upgrade applied: frameType=box, using selected frame color: Black Frame
+VM3355 shopify-ar-widget.js:1334 [EastSide AR] BOX FRAME APPLIED - Frame type changed to "box", color: Black Frame
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Updated config after addon change - frameType: box
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=box&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js?v=10:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js?v=10:550 [EastSide AR] Looking for variant ID: 56555676074361
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 1 selected addons
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon: checking addon name: black box frame
+shopify-ar-widget.js?v=10:550 [EastSide AR] BOX FRAME DETECTED via ESS addon widget: black box frame
+shopify-ar-widget.js?v=10:1328 [EastSide AR] BOX FRAME CHECK: DETECTED
+shopify-ar-widget.js?v=10:550 [EastSide AR] Box frame upgrade applied: frameType=box, using selected frame color: Black Frame
+shopify-ar-widget.js?v=10:1334 [EastSide AR] BOX FRAME APPLIED - Frame type changed to "box", color: Black Frame
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 1 potential mount containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No mount selection detected
+shopify-ar-widget.js?v=10:550 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mapped: Black Frame → black
+shopify-ar-widget.js?v=10:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Updated config after addon change - frameType: box
+shopify-ar-widget.js?v=10:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=box&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Addon changed: Black Box Frame | Checked: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Addon changed: Black Box Frame | Checked: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Using fallback image with scale-by-width mode
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found Shopify product ID: 15331131490681
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found product in window.meta
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Looking for variant ID: 56555676074361
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found current variant: undefined
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Found 0 Yes/No option buttons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Box Frame Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+VM3355 shopify-ar-widget.js:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 2: Found 64 checked inputs
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 3: Found 0 Globo option elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 4: Found 0 selected swatches
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 5: Found 2 select elements
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No box frame upgrade detected
+VM3355 shopify-ar-widget.js:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] === Detecting Mount Selection ===
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Method 1: Found 1 potential mount containers
+VM3355 shopify-ar-widget.js:550 [EastSide AR] No mount selection detected
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Globo mount detection result: false
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Frame mapped: Black Frame → black
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Updated config after addon change - frameType: standard
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000" data-size=​"A1 - 23.4" x 33.1"" data-frame=​"Black Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+shopify-ar-widget.js?v=10:550 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000","size":"A1 - 23.4","frame":"Black Frame","title":"121_AR","eastsideInitialized":"true"}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from Size: label: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size from buttons/labels: A1 - 23.4" x 33.1"
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size ratio from normalized map: A1 - 23.4" x 33.1" → a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] Target ratio for size A1 - 23.4" x 33.1" : a-ratio
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Finding best image for ratio: a-ratio ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Available images: {a-ratio: 'no', 3x4: 'no', 4x5: 'no', 2x3: 'no', 1x1: 'no', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Using fallback image with scale-by-width mode
+shopify-ar-widget.js?v=10:550 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=4000 size: A1 - 23.4" x 33.1" frame: Black Frame frameType: standard scaleByWidth: true
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found Shopify product ID: 15331131490681
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found product in window.meta
+shopify-ar-widget.js?v=10:550 [EastSide AR] Looking for variant ID: 56555676074361
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found current variant: undefined
+shopify-ar-widget.js?v=10:550 [EastSide AR] Found 0 Yes/No option buttons
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Box Frame Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 selected addons
+shopify-ar-widget.js?v=10:550 [EastSide AR] ESS Addon Widget: Found 0 checked addon inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 2: Found 64 checked inputs
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 3: Found 0 Globo option elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 4: Found 0 selected swatches
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 5: Found 2 select elements
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 7: Found 13 upgrade/addon containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No box frame upgrade detected
+shopify-ar-widget.js?v=10:1328 [EastSide AR] BOX FRAME CHECK: Not selected
+shopify-ar-widget.js?v=10:550 [EastSide AR] === Detecting Mount Selection ===
+shopify-ar-widget.js?v=10:550 [EastSide AR] Method 1: Found 1 potential mount containers
+shopify-ar-widget.js?v=10:550 [EastSide AR] No mount selection detected
+shopify-ar-widget.js?v=10:550 [EastSide AR] Globo mount detection result: false
+shopify-ar-widget.js?v=10:550 [EastSide AR] Size mapped: A1 - 23.4" x 33.1" → A1
+shopify-ar-widget.js?v=10:550 [EastSide AR] Frame mapped: Black Frame → black
+shopify-ar-widget.js?v=10:550 [EastSide AR] Final config: {imageUrl: '//eastsidestudiolondon.co.uk/cdn/shop/files/Low_Re…tch_24.1028_-_Ripples.jpg?v=1739566068&width=4000', size: 'A1', frame: 'black', title: '121_AR', mount: '0', …}
+shopify-ar-widget.js?v=10:550 [EastSide AR] Updated config after addon change - frameType: standard
+shopify-ar-widget.js?v=10:550 [EastSide AR] Prefetching GLB for desktop: https://upload.eastsidestudiolondon.co.uk/api/ar/generate?imageUrl=https%3A%2F%2Feastsidestudiolondon.co.uk%2Fcdn%2Fshop%2Ffiles%2FLow_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg%3Fv%3D1739566068%26width%3D4000&size=A1&frame=black&title=121_AR&mount=0&frameType=standard&scaleByWidth=1
+VM3355 shopify-ar-widget.js:550 [EastSide AR] Desktop GLB prefetch complete - model cached
+shopify-ar-widget.js?v=10:550 [EastSide AR] Desktop GLB prefetch complete - model cached

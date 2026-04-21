@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Add-ons Widget - Installation Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; padding: 40px 20px; color: #1a1a1a; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    .subtitle { color: #666; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
+    h3 { font-size: 16px; margin: 24px 0 12px; }
+    .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    pre { background: #1a1a1a; color: #f0f0f0; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 16px 0; font-size: 13px; line-height: 1.5; }
+    pre code { background: none; padding: 0; }
+    .step { display: flex; gap: 16px; margin: 16px 0; }
+    .step-num { width: 28px; height: 28px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; flex-shrink: 0; }
+    .step-content { flex: 1; }
+    .note { background: #fff8e6; border-left: 4px solid #f0b429; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+    .success { background: #e6f7e6; border-left: 4px solid #2e7d32; }
+    ul { margin: 8px 0 8px 24px; }
+    li { margin: 4px 0; }
+    a { color: #1a1a1a; }
+    .copy-btn { background: #333; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; float: right; margin-top: -8px; }
+    .copy-btn:hover { background: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Add-ons Widget</h1>
+    <p class="subtitle">Installation guide for Shopify themes</p>
+
+    <div class="section">
+      <h2>Quick Start</h2>
+      <p>Add the widget to any product page template to display upgrade options like Box Frame and Paper upgrades.</p>
+      
+      <div class="note">
+        <strong>Recommended:</strong> Create a separate product template for testing before applying to live products.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Installation Steps</h2>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Create a Test Product Template</h3>
+          <p>In Shopify Admin, go to <strong>Online Store → Themes → Edit Code</strong></p>
+          <p>Create a new template: <code>Templates → Add a new template → product → product.addons-test.liquid</code></p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Add the Container Element</h3>
+          <p>In your product template, add this container below the variant selector:</p>
+          <pre><code>&lt;!-- ESS Product Add-ons --&gt;
+&lt;div id="ess-addons-container" 
+     data-product-id="{{ product.id }}"&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Add the Script</h3>
+          <p>Add this script tag before the closing <code>&lt;/body&gt;</code> tag or in your template:</p>
+          <pre><code>&lt;script src="https://east-side-studio-london-ar.replit.app/shopify-addons-widget.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Assign Template to Test Product</h3>
+          <p>Go to a test product in Shopify Admin and change its template to <code>product.addons-test</code></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Complete Liquid Snippet</h2>
+      <p>Copy this entire snippet into your product template:</p>
+      <pre><code>{%- comment -%}
+  ESS Product Add-ons Widget
+  Place below variant selector, above Add to Cart button
+{%- endcomment -%}
+
+&lt;div id="ess-addons-container" 
+     data-product-id="{{ product.id }}"
+     style="margin: 20px 0;"&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  (function() {
+    // Load the add-ons widget
+    var script = document.createElement('script');
+    script.src = 'https://east-side-studio-london-ar.replit.app/shopify-addons-widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  })();
+&lt;/script&gt;</code></pre>
+    </div>
+
+    <div class="section">
+      <h2>Restricting to Specific Products</h2>
+      <p>By default, add-ons with <code>allowedProductIds</code> set will only appear on those products.</p>
+      
+      <h3>Set Product Restrictions via API:</h3>
+      <pre><code>PATCH /api/admin/addons/:id
+{
+  "allowedProductIds": ["15079516209529", "15079516242297"]
+}</code></pre>
+
+      <p>Or leave <code>allowedProductIds</code> as <code>null</code> to show on all products.</p>
+    </div>
+
+    <div class="section">
+      <h2>Styling Customization</h2>
+      <p>The widget inherits CSS variables from your theme. Override these in your theme CSS:</p>
+      <pre><code>:root {
+  --color-foreground: #1a1a1a;
+  --color-foreground-secondary: #666;
+  --color-background: #fff;
+  --color-background-secondary: #fafafa;
+  --color-border: #e0e0e0;
+  --color-accent: #f0f0f0;
+}</code></pre>
+    </div>
+
+    <div class="section">
+      <h2>Cart Behavior Options</h2>
+      <p>Customize how the widget handles cart additions:</p>
+      <pre><code>ESSAddons.init({
+  productId: '{{ product.id }}',
+  
+  // Disable redirect to cart page (for drawer/modal carts)
+  redirectToCart: false,
+  
+  // Custom success handler
+  onCartSuccess: function(cartData, items) {
+    // Trigger your theme's cart drawer
+    document.dispatchEvent(new Event('cart:refresh'));
+  },
+  
+  // Custom error handler
+  onCartError: function(error, items) {
+    console.error('Cart error:', error);
+  }
+});</code></pre>
+      
+      <p>Listen for cart events (when redirectToCart: false):</p>
+      <pre><code>document.addEventListener('ess:cart:added', function(e) {
+  console.log('Items added:', e.detail.items);
+  // Open cart drawer, update cart count, etc.
+});</code></pre>
+    </div>
+
+    <div class="section">
+      <h2>Debug Mode</h2>
+      <p>Enable debug logging in browser console:</p>
+      <pre><code>ESSAddons.setDebug(true);</code></pre>
+      
+      <p>Check selected add-ons:</p>
+      <pre><code>ESSAddons.getSelectedAddons();</code></pre>
+      
+      <p>Force refresh add-ons:</p>
+      <pre><code>ESSAddons.refresh();</code></pre>
+      
+      <p>Change product ID dynamically:</p>
+      <pre><code>ESSAddons.setProductId('12345678');</code></pre>
+    </div>
+
+    <div class="section success">
+      <h2>Testing Checklist</h2>
+      <ul>
+        <li>Select a framed variant → Box Frame upgrade appears</li>
+        <li>Select an unframed variant → Paper Upgrade appears</li>
+        <li>Check/uncheck add-ons → Price updates in cart</li>
+        <li>Click Add to Cart → Both main product and add-ons added</li>
+        <li>Test from a restricted country → Add-ons hidden appropriately</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>API Reference</h2>
+      <p>The widget calls this endpoint:</p>
+      <pre><code>GET /api/addons?productId={id}&variant={title}&size={size}&country={code}</code></pre>
+      
+      <h3>Parameters:</h3>
+      <ul>
+        <li><code>productId</code> - Shopify product ID (for product-specific restrictions)</li>
+        <li><code>variant</code> - Selected variant title (e.g., "A3 Black Frame")</li>
+        <li><code>size</code> - Print size extracted from variant</li>
+        <li><code>country</code> - 2-letter country code (e.g., "GB", "US")</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

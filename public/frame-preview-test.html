@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frame Preview Widget Test - East Side Studio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; padding: 2rem; }
+    .page-header { max-width: 900px; margin: 0 auto 2rem; }
+    .page-header h1 { font-size: 1.5rem; font-weight: 600; }
+    .page-header p { color: #666; margin-top: 0.25rem; font-size: 0.9rem; }
+    .test-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto; }
+    .test-card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .test-card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .test-card p { font-size: 0.8rem; color: #888; margin-bottom: 1rem; }
+    .size-selector { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .size-btn { padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 4px; background: white; cursor: pointer; font-size: 0.8rem; transition: all 0.15s; }
+    .size-btn:hover { border-color: #999; }
+    .size-btn.active { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+    .info { margin-top: 1rem; font-size: 0.75rem; color: #999; }
+    @media (max-width: 700px) { .test-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <h1>Frame Preview Widget Test</h1>
+    <p>Testing the CSS layer-based frame + mount preview system. Overlays loaded from our app server.</p>
+  </div>
+
+  <div class="test-grid">
+    <div class="test-card">
+      <h2>Product with Mount</h2>
+      <p>data-has-mount="true" — mount toggle visible</p>
+
+      <div class="size-selector" id="size-selector-1">
+        <button class="size-btn" data-size="A4">A4</button>
+        <button class="size-btn active" data-size="A3">A3</button>
+        <button class="size-btn" data-size="A2">A2</button>
+        <button class="size-btn" data-size="A1">A1</button>
+      </div>
+
+      <div id="ess-frame-preview"
+           data-product-id="test-001"
+           data-has-mount="true"
+           data-artwork-url=""
+           data-sizes="A4,A3,A2,A1"
+           data-default-size="A3"
+           data-default-frame="black"
+           data-overlay-base="">
+      </div>
+      <div class="info" id="info-1"></div>
+    </div>
+
+    <div class="test-card">
+      <h2>Product without Mount</h2>
+      <p>data-has-mount="false" — no mount toggle, no mount overlay</p>
+
+      <div class="size-selector" id="size-selector-2">
+        <button class="size-btn" data-size="A4">A4</button>
+        <button class="size-btn" data-size="A3">A3</button>
+        <button class="size-btn active" data-size="A2">A2</button>
+        <button class="size-btn" data-size="A1">A1</button>
+      </div>
+
+      <div data-ess-frame-preview
+           data-product-id="test-002"
+           data-has-mount="false"
+           data-artwork-url=""
+           data-sizes="A4,A3,A2,A1"
+           data-default-size="A2"
+           data-default-frame="natural"
+           data-overlay-base="">
+      </div>
+      <div class="info" id="info-2"></div>
+    </div>
+  </div>
+
+  <script>
+    // Use a test artwork image
+    var testArtworkUrl = '/api/admin/frame-overlays/preview/frame-a3-black.png';
+    // Try to use a real artwork image from object storage if available
+    var artworkUrl = 'https://picsum.photos/600/850';
+
+    // Set artwork URLs
+    document.querySelectorAll('[data-artwork-url]').forEach(function(el) {
+      el.dataset.artworkUrl = artworkUrl;
+    });
+
+    // Set overlay base to our server's preview endpoint
+    var overlayBase = window.location.origin + '/api/admin/frame-overlays/preview/';
+    document.querySelectorAll('[data-overlay-base]').forEach(function(el) {
+      el.dataset.overlayBase = overlayBase;
+    });
+
+    // Size selector buttons
+    document.querySelectorAll('.size-selector').forEach(function(selector) {
+      var previewContainer = selector.nextElementSibling;
+      selector.querySelectorAll('.size-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          selector.querySelectorAll('.size-btn').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var instance = previewContainer._essFramePreview;
+          if (instance) {
+            instance.setSize(btn.dataset.size);
+          }
+        });
+      });
+    });
+
+    // Listen for events
+    document.addEventListener('ess:frame-change', function(e) {
+      console.log('Frame changed:', e.detail);
+    });
+    document.addEventListener('ess:size-change', function(e) {
+      console.log('Size changed:', e.detail);
+    });
+    document.addEventListener('ess:mount-change', function(e) {
+      console.log('Mount changed:', e.detail);
+    });
+  </script>
+  <script src="/shopify-frame-preview.js"></script>
+</body>
+</html>

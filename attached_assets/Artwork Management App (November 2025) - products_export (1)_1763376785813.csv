@@ -1,0 +1,47 @@
+Handle,Title,Max Size,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option1 Linked To,Option2 Name,Option2 Value,Option2 Linked To,Option3 Name,Option3 Value,Option3 Linked To,Variant SKU,Variant Grams,Variant Inventory,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Variant Barcode,Image Src,Image Position,Image Alt Text,Gift Card,Metafield: title_tag [string],Metafield: description_tag [string],Google Shopping / Google Product Category,Google Shopping / Gender,Google Shopping / Age Group,Google Shopping / MPN,Google Shopping / Condition,Google Shopping / Custom Product,Google Shopping / Custom Label 0,Google Shopping / Custom Label 1,Google Shopping / Custom Label 2,Google Shopping / Custom Label 3,Google Shopping / Custom Label 4,Ankorstore Casing (product.metafields.asc.casing),Ankorstore VAT (product.metafields.asc.vat),Bundly Extra Data (product.metafields.bundly.extra_data),Metafield: custom.artistbiography [rich_text_field],Metafield: custom.artist_name [multi_line_text_field],Metafield: custom.colour [list.single_line_text_field],Metafield: custom.exclusivity [single_line_text_field],Metafield: custom.mood [list.single_line_text_field],Metafield: custom.wav_image [file_reference],Print Specification (product.metafields.custom.print_specification),Metafield: custom.shape [list.single_line_text_field],Metafield: custom.space [list.single_line_text_field],Metafield: custom.style [list.single_line_text_field],Metafield: custom.themes [list.single_line_text_field],Google: Custom Product (product.metafields.mm-google-shopping.custom_product),Product rating count (product.metafields.reviews.rating_count),Complementary products (product.metafields.shopify--discovery--product_recommendation.complementary_products),Related products (product.metafields.shopify--discovery--product_recommendation.related_products),Related products settings (product.metafields.shopify--discovery--product_recommendation.related_products_display),Search product boosts (product.metafields.shopify--discovery--product_search_boost.queries),Variant Image,Variant Weight Unit,Variant Tax Code,Cost per item,Included / United Kingdom,Price / United Kingdom,Compare At Price / United Kingdom,Included / Europe USA & ROW,Price / Europe USA & ROW,Compare At Price / Europe USA & ROW,"Included / Canada, AU & NZ","Price / Canada, AU & NZ",1,2,3,4,5,6,7,Status,Custom Collections,Template Suffix,Metafield: custom.artwork_story [multi_line_text_field],Metafield: custom.artist [metaobject_reference]
+flooded-with-thoughts-hoi-chan,Flooded with Thoughts - Hoi Chan,A3,"Flooded with Thoughts by Hoi Chan. A limited edition fine art print on 310gsm Hahnemühle German Etching paper.
+
+Limited edition of 35 pieces:
+- 8"" x 12"" - Edition of 35",Hoi Chan,"Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork","Posters, Prints, & Visual Artwork",,FALSE,Size,"A3 - 11.7"" x 16.5""",,Frame,Unframed,,,,,,10,shopify,continue,manual,39,,true,true,,,,,,Digital Art Print – Flooded with Thoughts - Limited Edition by Hoi Chan | East Side Studio London  ,"Shop Flooded with Thoughts by Hoi Chan, a limited edition dreamy art print of a surreal landscape in blue, pink, and turquoise. Shop now at East Side Studio London.",,,,,,,,,,,,,,,"{
+  ""type"": ""root"",
+  ""children"": [
+    {
+      ""type"": ""paragraph"",
+      ""children"": [
+        {
+          ""type"": ""text"",
+          ""value"": ""Hoi Chan is a Hong Kong-born, New Orleans-based illustrator whose work is deeply influenced by nature and personal emotions. Drawing from his observations of the natural world, he intricately weaves organic elements with the complexities of the human mind.""
+        }
+      ]
+    },
+    {
+      ""type"": ""paragraph"",
+      ""children"": [
+        {
+          ""type"": ""text"",
+          ""value"": ""Having lived in both Hong Kong and New Orleans, Chan’s artistic expression is shaped by the tropical environments of these two locales. The humidity-laden breezes, lush vegetation, and abundant rainfall inform his distinctive color palette and fluid, inviting shapes. His work not only reflects the external world around him but also serves as a visual extension of his emotions and lived experiences.""
+        }
+      ]
+    }
+  ]
+}",Hoi Chan,"[""Blue"",""Pink"",""Multicolour""]",Exclusive to East Side Studio London,"[""Cool"",""Dreamy""]",,"Giclée printed on 310gsm Hahnemühle German Etching paper, a beautiful mould-made paper with a soft felt-like textured finish, a favourite for fine art reproductions. 
+
+Limited edition of 80 pieces:
+- A3 - 11.7"" x 16.5"" - 80 Available
+
+Accompanied by a physical certificate of authenticity, which includes the artists signature, edition number and artwork details. You will also be emailed a digital certification from Verisart.","[""Landscape""]","[""Living Room"",""Kitchen"",""Office"",""Hallway"",""Bedroom"",""Dining Room"",""Bathroom""]",,"[""Nature"",""Fantasy""]",,,,,,,,g,,,TRUE,,,TRUE,,,TRUE,,,TRUE,,,TRUE,,,draft,"New Releases, All Prints",main-product-template,"This artwork serves as an end-of-year reflection for Hoi. The artist lives in a city filled with old oak trees whose roots spread across the ground, forming small pools of water. This image often makes Hoi think about how they feel at the close of a year — trying to process everything they've accomplished and everything they still need to work on.",artists.hoi-chan
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,Black,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,White,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,Natural,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Unframed,,,,,,10,shopify,continue,manual,65,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Black,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,White,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+flooded-with-thoughts-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Natural,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,Bloom Bloom - Hoi Chan,A3,,,,,,,,"A3 - 11.7"" x 16.5""",,Frame,Unframed,,,,,,10,shopify,continue,manual,39,,true,true,,,,,,,,,,,,,,,,,,,,,,No Match,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,Black,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,White,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A3 - 11.7"" x 16.5""",,,Natural,,,,,,200,shopify,continue,manual,92,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Unframed,,,,,,10,shopify,continue,manual,65,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Black,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,White,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,
+bloom-bloom-hoi-chan,,,,,,,,,,"A2 - 16.5"" x 23.4""",,,Natural,,,,,,200,shopify,continue,manual,150,,true,true,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,,,,,,,,,,,,,,,,,,main-product-template,,

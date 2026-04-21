@@ -1,0 +1,38 @@
+[EastSide AR] Button click event fired
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​YES__SkyBlue_A1-03_ar.png?v=1769784318&width=1200" data-size=​"A2 - 16.5" x 23.4"" data-frame=​"Black Frame" data-title=​"YES! - Sky Blue" data-eastside-initialized=​"true">​…​</div>​
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/YES__SkyBlue_A1-03_ar.png?v=1769784318&width=1200","size":"A2 - 16.5","frame":"Black Frame","title":"YES! - Sky Blue","eastsideInitialized":"true"}
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Size from Size: label: A2 - 16.5" x 23.4"
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Size from buttons/labels: A2 - 16.5" x 23.4"
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Size ratio from normalized map: A2 - 16.5" x 23.4" → a-ratio
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Target ratio for size A2 - 16.5" x 23.4" : a-ratio
+VM4226 shopify-ar-widget.js:519 [EastSide AR] === Finding best image for ratio: a-ratio ===
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Available images: Object
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Using fallback image with scale-by-width mode
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/YES__SkyBlue_A1-03_ar.png?v=1769784318&width=1200 size: A2 - 16.5" x 23.4" frame: Black Frame frameType: standard scaleByWidth: true
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Found Shopify product ID: 7187693895812
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Found product in window.meta
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Looking for variant ID: 41729630175364
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Found current variant: undefined
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Found 0 Yes/No option buttons
+VM4226 shopify-ar-widget.js:519 [EastSide AR] === Detecting Box Frame Selection ===
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 1: Found 9 selected elements (excluding tabs)
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 2: Found 64 checked inputs
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 3: Found 0 Globo option elements
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 4: Found 0 selected swatches
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 5: Found 2 select elements
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 7: Found 0 upgrade/addon containers
+VM4226 shopify-ar-widget.js:519 [EastSide AR] No box frame upgrade detected
+VM4226 shopify-ar-widget.js:519 [EastSide AR] === Detecting Mount Selection ===
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Method 1: Found 0 potential mount containers
+VM4226 shopify-ar-widget.js:519 [EastSide AR] No mount selection detected
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Globo mount detection result: false
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Size mapped: A2 - 16.5" x 23.4" → A2
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Frame mapped: Black Frame → black
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Final config: Object
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Button clicked, productConfig: Object
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Opening AR viewer...
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Requesting PNG format explicitly for PNG source file
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Cleaned image URL: https://eastsidestudiolondon.co.uk/cdn/shop/files/YES__SkyBlue_A1-03_ar.png?v=1769784318&format=png
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Device detection - iOS: false Android: false
+VM4226 shopify-ar-widget.js:519 [EastSide AR] Opening desktop AR modal

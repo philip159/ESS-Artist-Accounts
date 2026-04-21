@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanger Position Tool</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a2e; color: #fff; }
+    #canvas-container { width: 100vw; height: 70vh; }
+    #controls { padding: 20px; background: #16213e; }
+    .control-group { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+    label { width: 120px; font-weight: 500; }
+    input[type="range"] { flex: 1; max-width: 300px; }
+    .value { width: 80px; text-align: right; font-family: monospace; }
+    button { background: #e94560; color: white; border: none; padding: 12px 24px; cursor: pointer; border-radius: 6px; font-size: 16px; margin-right: 10px; }
+    button:hover { background: #ff6b6b; }
+    #output { background: #0f3460; padding: 15px; margin-top: 15px; border-radius: 6px; font-family: monospace; white-space: pre-wrap; }
+    h2 { margin: 0 0 15px 0; color: #e94560; }
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <div id="controls">
+    <h2>Hanger Position Tool</h2>
+    <p>Adjust rotation to orient the hanger correctly. Looking from the back of the frame, teeth should point UP.</p>
+    
+    <div class="control-group">
+      <label>Rotation X:</label>
+      <input type="range" id="rotX" min="-180" max="180" value="0" step="5">
+      <span class="value" id="rotXVal">0°</span>
+    </div>
+    
+    <div class="control-group">
+      <label>Rotation Y:</label>
+      <input type="range" id="rotY" min="-180" max="180" value="0" step="5">
+      <span class="value" id="rotYVal">0°</span>
+    </div>
+    
+    <div class="control-group">
+      <label>Rotation Z:</label>
+      <input type="range" id="rotZ" min="-180" max="180" value="0" step="5">
+      <span class="value" id="rotZVal">0°</span>
+    </div>
+    
+    <h3 style="margin-top: 20px; color: #4ecdc4;">Position (mm from center)</h3>
+    
+    <div class="control-group">
+      <label>Position X:</label>
+      <input type="range" id="posX" min="-50" max="50" value="0" step="1">
+      <span class="value" id="posXVal">0mm</span>
+    </div>
+    
+    <div class="control-group">
+      <label>Position Y:</label>
+      <input type="range" id="posY" min="-50" max="50" value="0" step="1">
+      <span class="value" id="posYVal">0mm</span>
+    </div>
+    
+    <div class="control-group">
+      <label>Position Z:</label>
+      <input type="range" id="posZ" min="-20" max="20" value="-5" step="1">
+      <span class="value" id="posZVal">-5mm</span>
+    </div>
+    
+    <button id="copyBtn">Copy Values</button>
+    <button id="resetBtn">Reset</button>
+    
+    <div id="output">Adjust sliders above...</div>
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x2a2a4a);
+
+    const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.001, 100);
+    camera.position.set(0, 0, 0.15);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+
+    // Lighting
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    dirLight.position.set(5, 5, 5);
+    scene.add(dirLight);
+
+    // Load actual frame model from the AR endpoint
+    let frameGroup = new THREE.Group();
+    scene.add(frameGroup);
+    
+    let hangerGroup = new THREE.Group();
+    scene.add(hangerGroup);
+    
+    let frameLoaded = false;
+    let hangerLoaded = false;
+    let frameBounds = null;
+
+    const loader = new GLTFLoader();
+    
+    // Load a sample frame (without hanger) - using a test artwork
+    // First load the frame to understand its coordinate system
+    fetch('/api/artworks')
+      .then(r => r.json())
+      .then(artworks => {
+        if (artworks && artworks.length > 0) {
+          const artworkId = artworks[0].id;
+          // Load frame GLB
+          loader.load(`/api/artworks/${artworkId}/ar-model?size=A4&frame=black&mount=50&skipHanger=true`, (gltf) => {
+            console.log('Frame loaded successfully');
+            const frame = gltf.scene;
+            
+            // Get frame bounds
+            const box = new THREE.Box3().setFromObject(frame);
+            frameBounds = {
+              min: box.min.clone(),
+              max: box.max.clone(),
+              center: box.getCenter(new THREE.Vector3())
+            };
+            
+            frameGroup.add(frame);
+            frameLoaded = true;
+            
+            // Position camera to see the back
+            const size = box.getSize(new THREE.Vector3());
+            camera.position.set(0, 0, -Math.max(size.x, size.y) * 1.5);
+            camera.lookAt(0, 0, 0);
+            controls.target.set(0, 0, 0);
+            
+            updateOutput();
+          });
+        }
+      })
+      .catch(err => console.error('Failed to load artworks:', err));
+    
+    // Load hanger separately
+    loader.load('/server-assets/frame_hanger.glb', (gltf) => {
+      console.log('Hanger loaded successfully');
+      const hanger = gltf.scene;
+      
+      // Scale to 30mm width
+      const box = new THREE.Box3().setFromObject(hanger);
+      const size = box.getSize(new THREE.Vector3());
+      const scale = 0.030 / Math.max(size.x, size.y, size.z);
+      hanger.scale.setScalar(scale);
+      
+      // Center it
+      box.setFromObject(hanger);
+      const center = box.getCenter(new THREE.Vector3());
+      hanger.position.sub(center);
+      
+      // Make it dark metal
+      hanger.traverse((child) => {
+        if (child.isMesh) {
+          child.material = new THREE.MeshStandardMaterial({
+            color: 0x1a1a1a,
+            metalness: 0.9,
+            roughness: 0.3
+          });
+        }
+      });
+      
+      hangerGroup.add(hanger);
+      hangerLoaded = true;
+      
+      updateOutput();
+    });
+
+    // Controls
+    const rotXInput = document.getElementById('rotX');
+    const rotYInput = document.getElementById('rotY');
+    const rotZInput = document.getElementById('rotZ');
+    const posXInput = document.getElementById('posX');
+    const posYInput = document.getElementById('posY');
+    const posZInput = document.getElementById('posZ');
+
+    function updateTransform() {
+      const rotX = parseFloat(rotXInput.value) * Math.PI / 180;
+      const rotY = parseFloat(rotYInput.value) * Math.PI / 180;
+      const rotZ = parseFloat(rotZInput.value) * Math.PI / 180;
+      
+      // Position in mm, convert to meters
+      const posX = parseFloat(posXInput.value) / 1000;
+      const posY = parseFloat(posYInput.value) / 1000;
+      const posZ = parseFloat(posZInput.value) / 1000;
+      
+      hangerGroup.rotation.set(rotX, rotY, rotZ);
+      hangerGroup.position.set(posX, posY, posZ);
+      
+      document.getElementById('rotXVal').textContent = rotXInput.value + '°';
+      document.getElementById('rotYVal').textContent = rotYInput.value + '°';
+      document.getElementById('rotZVal').textContent = rotZInput.value + '°';
+      document.getElementById('posXVal').textContent = posXInput.value + 'mm';
+      document.getElementById('posYVal').textContent = posYInput.value + 'mm';
+      document.getElementById('posZVal').textContent = posZInput.value + 'mm';
+      
+      updateOutput();
+    }
+
+    function updateOutput() {
+      const output = document.getElementById('output');
+      output.textContent = `Values to use in code:
+      
+ROTATION:
+rotX = ${rotXInput.value}° (${(parseFloat(rotXInput.value) * Math.PI / 180).toFixed(4)} radians)
+rotY = ${rotYInput.value}° (${(parseFloat(rotYInput.value) * Math.PI / 180).toFixed(4)} radians)
+rotZ = ${rotZInput.value}° (${(parseFloat(rotZInput.value) * Math.PI / 180).toFixed(4)} radians)
+
+POSITION OFFSET:
+posX = ${posXInput.value}mm (${(parseFloat(posXInput.value) / 1000).toFixed(4)}m)
+posY = ${posYInput.value}mm (${(parseFloat(posYInput.value) / 1000).toFixed(4)}m)
+posZ = ${posZInput.value}mm (${(parseFloat(posZInput.value) / 1000).toFixed(4)}m)
+
+Tell me these values when the hanger looks correct!`;
+    }
+
+    rotXInput.addEventListener('input', updateTransform);
+    rotYInput.addEventListener('input', updateTransform);
+    rotZInput.addEventListener('input', updateTransform);
+    posXInput.addEventListener('input', updateTransform);
+    posYInput.addEventListener('input', updateTransform);
+    posZInput.addEventListener('input', updateTransform);
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      rotXInput.value = 0;
+      rotYInput.value = 0;
+      rotZInput.value = 0;
+      posXInput.value = 0;
+      posYInput.value = 0;
+      posZInput.value = -5;
+      updateTransform();
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', () => {
+      const text = `rotX: ${rotXInput.value}°, rotY: ${rotYInput.value}°, rotZ: ${rotZInput.value}°, posX: ${posXInput.value}mm, posY: ${posYInput.value}mm, posZ: ${posZInput.value}mm`;
+      navigator.clipboard.writeText(text);
+      alert('Copied: ' + text);
+    });
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Resize handler
+    window.addEventListener('resize', () => {
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    });
+  </script>
+</body>
+</html>

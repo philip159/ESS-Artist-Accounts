@@ -1,0 +1,88 @@
+Two things are biting you here, and you can see the main one in your screenshot: the grain direction doesn’t “turn the corner” on the top/bottom pieces. It stays vertical everywhere, which means your U axis is not actually aligned to the long edge on some faces (it’s aligned to the short edge instead), so your uScale is being applied on the wrong edge and the texture ends up looking squashed/stretched.
+
+1) Your maths is fine, but you’re applying it to the wrong edge on some quads
+
+Your formula:
+
+scale texture uniformly so texture height matches face width
+
+then take only a fraction of U so the scaled length matches the face length
+
+…is correct only if your UVs are built such that:
+
+V spans the face width, and
+
+U spans the face length
+
+Right now, on some faces (commonly top/bottom), your vertex order means p0 → p1 is the width edge, not the length edge. So you’re effectively telling three.js:
+
+“this edge is length, use uScale”
+
+but it’s actually width
+
+Result: wrong axis gets the “long strip”, and everything looks compressed.
+
+Fix
+
+Stop assuming the same vertex order means the same physical direction.
+
+Replace your “UV assignment” block:
+
+// current
+p0: (0, 0)
+p1: (uScale, 0)
+p2: (uScale, 1)
+p3: (0, 1)
+
+
+with a version that detects which edge is longer and rotates the UVs when needed:
+
+const TEX_L = 5.005; // metres (5005mm)
+const TEX_H = 0.105; // metres (105mm)
+
+function setQuadUVs(uvAttr, i0, i1, i2, i3, a, b, c, d) {
+  // a,b,c,d are THREE.Vector3 positions for vertices i0..i3 in the same winding
+  const e01 = a.distanceTo(b); // edge i0->i1
+  const e03 = a.distanceTo(d); // edge i0->i3
+
+  // Decide which edge is the face "width" (short) and which is "length" (long)
+  const longIs01 = e01 >= e03;
+  const faceLen = longIs01 ? e01 : e03;
+  const faceWid = longIs01 ? e03 : e01;
+
+  // Your intended logic: scale uniformly so texture height fits face width
+  const scaledTexLen = TEX_L * (faceWid / TEX_H);
+  const uScale = faceLen / scaledTexLen;
+
+  if (longIs01) {
+    // U follows i0->i1, V follows i0->i3
+    uvAttr.setXY(i0, 0,     0);
+    uvAttr.setXY(i1, uScale,0);
+    uvAttr.setXY(i2, uScale,1);
+    uvAttr.setXY(i3, 0,     1);
+  } else {
+    // Rotate UVs 90° so U follows i0->i3 (the long edge)
+    uvAttr.setXY(i0, 0,     0);
+    uvAttr.setXY(i1, 0,     uScale);
+    uvAttr.setXY(i2, 1,     uScale);
+    uvAttr.setXY(i3, 1,     0);
+  }
+
+  uvAttr.needsUpdate = true;
+}
+
+
+That one change usually fixes the “why does top/bottom look wrong?” problem immediately.
+
+2) If you scale meshes after building UVs, you will “mysteriously” stretch the texture
+
+If you do something like:
+
+mesh.scale.set( … )
+
+
+after computing UVs from “frameLength”, your UVs no longer match the final world size. Either:
+
+bake scale into geometry before UVs (geometry.scale(...) then compute UVs), or
+
+compute faceLen/faceWid from the actual vertex positions after all transforms (or multiply by scale factors).

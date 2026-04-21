@@ -1,0 +1,35 @@
+[ESS Addons] === Widget script loaded ===
+shopify-addons-widget.js:239 [ESS Addons] API Base: https://f842df1f-50ad-46b9-abdc-0432ce474a5b-00-27cn1my7bcnch.riker.replit.dev
+shopify-addons-widget.js:239 [ESS Addons] Container selector: #ess-addons-container
+shopify-addons-widget.js:239 [ESS Addons] Document readyState: interactive
+shopify-addons-widget.js:239 [ESS Addons] DOM already ready - starting auto-init with retries...
+shopify-addons-widget.js:239 [ESS Addons] Auto-init attempt 1/30: Container found? true
+shopify-addons-widget.js:239 [ESS Addons] Auto-init: Container has data-product-id? true
+shopify-addons-widget.js:239 [ESS Addons] Auto-init: Calling init()
+shopify-addons-widget.js:239 [ESS Addons] === init() called ===
+shopify-addons-widget.js:239 [ESS Addons] initOptions: {}
+shopify-addons-widget.js:239 [ESS Addons] Already initialized? false
+shopify-addons-widget.js:239 [ESS Addons] Styles injected
+shopify-addons-widget.js:239 [ESS Addons] Container found? true
+shopify-addons-widget.js:239 [ESS Addons] Container element: <div id="ess-addons-container" data-product-id="15331131490681"></div>
+shopify-addons-widget.js:239 [ESS Addons] Container data-product-id: 15331131490681
+shopify-addons-widget.js:239 [ESS Addons] Product ID from container: 15331131490681
+shopify-addons-widget.js:239 [ESS Addons] Detected country: GB
+shopify-addons-widget.js:239 [ESS Addons] Initialization complete - fetching addons...
+shopify-addons-widget.js:239 [ESS Addons] updateAddons called, force: false
+shopify-addons-widget.js:239 [ESS Addons] Selected variant: {"id":null,"title":""}
+shopify-addons-widget.js:239 [ESS Addons] No variant ID found - cannot fetch addons
+shopify-addons-widget.js:239 [ESS Addons] === Widget fully initialized ===
+shopify-addons-widget.js:239 [ESS Addons] === init() called ===
+shopify-addons-widget.js:239 [ESS Addons] initOptions: {"productId":"15331131490681"}
+shopify-addons-widget.js:239 [ESS Addons] Already initialized? true
+shopify-addons-widget.js:239 [ESS Addons] Skipping - already initialized
+shopify-addons-widget.js:239 [ESS Addons] updateAddons called, force: Event
+shopify-addons-widget.js:239 [ESS Addons] Selected variant: {"id":null,"title":""}
+shopify-addons-widget.js:239 [ESS Addons] No variant ID found - cannot fetch addons
+shopify-addons-widget.js:239 [ESS Addons] updateAddons called, force: Event
+shopify-addons-widget.js:239 [ESS Addons] Selected variant: {"id":null,"title":""}
+shopify-addons-widget.js:239 [ESS Addons] No variant ID found - cannot fetch addons
+shopify-addons-widget.js:239 [ESS Addons] updateAddons called, force: Event {isTrusted: false, type: 'change', target: input, currentTarget: input, eventPhase: 2, …}
+shopify-addons-widget.js:239 [ESS Addons] Selected variant: {"id":null,"title":""}
+shopify-addons-widget.js:239 [ESS Addons] No variant ID found - cannot fetch addons

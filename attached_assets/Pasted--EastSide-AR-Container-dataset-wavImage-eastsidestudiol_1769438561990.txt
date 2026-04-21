@@ -1,0 +1,37 @@
+[EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"20","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Could not determine ratio for size: 20
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Target ratio for size 20 : null
+VM2063 shopify-ar-widget.js:468 [EastSide AR] === Finding best image for ratio: null ===
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Available images: Object
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Using fallback image with scale-by-width mode
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 20 frame: White Frame frameType: standard scaleByWidth: true
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Found Shopify product ID: 15331131490681
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Size from select - text: undefined value: undefined using: 
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200" data-size=​"20" x 30"" data-frame=​"White Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"20","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Could not determine ratio for size: 20
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Target ratio for size 20 : null
+VM2063 shopify-ar-widget.js:468 [EastSide AR] === Finding best image for ratio: null ===
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Available images: Object
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Using fallback image with scale-by-width mode
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 20 frame: White Frame frameType: standard scaleByWidth: true
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Found Shopify product ID: 15331131490681
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Size from select - text: undefined value: undefined using: 
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Container found: <div class=​"eastside-ar-container" data-wav-image=​"/​/​eastsidestudiolondon.co.uk/​cdn/​shop/​files/​Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200" data-size=​"20" x 30"" data-frame=​"White Frame" data-title=​"121_AR" data-eastside-initialized=​"true">​…​</div>​
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Container dataset: {"wavImage":"//eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200","size":"20","frame":"White Frame","title":"121_AR","eastsideInitialized":"true"}
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Could not determine ratio for size: 20
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Target ratio for size 20 : null
+VM2063 shopify-ar-widget.js:468 [EastSide AR] === Finding best image for ratio: null ===
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Available images: Object
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Using fallback image with scale-by-width mode
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Fallback mode: scale-by-width enabled (image ratio may differ from target)
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Raw values - imageUrl: //eastsidestudiolondon.co.uk/cdn/shop/files/Low_ResAaron_Borchardt_A-Ratio__23_Glitch_24.1028_-_Ripples.jpg?v=1739566068&width=1200 size: 20 frame: White Frame frameType: standard scaleByWidth: true
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Found Shopify product ID: 15331131490681
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Size from select - text: undefined value: undefined using: 
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Initializing AR widget v2.2.0
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Size mappings: 88 entries
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Frame mappings: 25 entries
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Initialized container 1
+VM2063 shopify-ar-widget.js:468 [EastSide AR] Container found: 
